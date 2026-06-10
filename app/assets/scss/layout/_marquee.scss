@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.marquee {
+    border-bottom: 2px solid var(--line);
+    overflow: hidden;
+    background: var(--bg-2);
+
+    &__track {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll 28s linear infinite;
+
+        span {
+            font-weight: 700;
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            padding: 13px 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 24px;
+
+            &::after {
+                content: "✶";
+                color: $color-accent;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
