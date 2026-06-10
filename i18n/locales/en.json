@@ -10,7 +10,63 @@
         "title_1": "Custom",
         "title_2": "websites",
         "title_3": "& apps",
-        "description" : "Freelance full-stack web developer. I build marketing sites and SaaS platforms for agencies and product teams."
+        "description" : "Freelance full-stack web developer. I build marketing sites and SaaS platforms for agencies and product teams.",
+
+         "stack" : {
+            "headline" : "Tech stack",
+            "title": "What I work with",
+            "items" : [
+                {
+                    "name": "Vue.js",
+                    "category": "Frontend / Framework",
+                    "percentage": 95
+                },
+                {
+                    "name": "Nuxt.js",
+                    "category": "Frontend / SSR",
+                    "percentage": 95
+                },
+                {
+                    "name": "Laravel",
+                    "category": "Backend  / PHP",
+                    "percentage": 95
+                },
+                {
+                    "name": "PHP",
+                    "category": "Backend",
+                    "percentage": 95
+                },
+                {
+                    "name": "Node.js",
+                    "category": "Backend",
+                    "percentage": 95
+                },
+                {
+                    "name": "SCSS",
+                    "category": "Frontend / Styling",
+                    "percentage": 95
+                },
+                {
+                    "name": "HTML / CSS",
+                    "category": "Frontend",
+                    "percentage": 95
+                }
+            ]
+        },
+
+        "services" : {
+            "headline" : "services",
+            "title": "How I work",
+            "websites" : {
+                "title": "Sites vitrines",
+                "description": "Rapides, optimisés SEO, pensés pour convertir. Nuxt &amp; SSR.",
+                "skills" : {
+                    "1" : "Performance",
+                    "2" : "SEO technique",
+                    "3" : "Responsive"
+                }
+            }
+        }
     },
 
     "see_projects": "See the work",

@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const { tm, rt } = useI18n();
+
+const stacks = computed(() => tm('home.stack.items'));
+</script>
 
 <template>
   <Hero :description="$t('home.description')">
@@ -47,57 +51,31 @@
     </div>
   </div>
 
-  <section id="stack">
+  <!-- Stacks -->
+  <section id="stack" class="section">
     <div class="wrap">
-      <div class="sec-label">
-        <b>01</b><span data-fr>/ Stack technique</span
-        ><span data-en>/ Tech stack</span>
+      <div class="section__headline">
+        <b>01</b>/
+        {{ $t('home.stack.headline') }}
       </div>
-      <h2 class="sec-h">
-        <span data-fr>Ce que j'utilise</span
-        ><span data-en>What I work with</span>
+      <h2 class="section__title">
+        {{ $t('home.stack.title') }}
       </h2>
-      <div class="stack-block">
-        <div class="row">
-          <span class="n">01</span><span class="name">Vue.js</span
-          ><span class="cat">Frontend / Framework</span
-          ><span class="bar"><i data-w="95"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">02</span><span class="name">Nuxt.js</span
-          ><span class="cat">Frontend / SSR</span
-          ><span class="bar"><i data-w="90"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">03</span><span class="name">Laravel</span
-          ><span class="cat">Backend / PHP</span
-          ><span class="bar"><i data-w="92"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">04</span><span class="name">PHP</span
-          ><span class="cat">Backend / Language</span
-          ><span class="bar"><i data-w="88"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">05</span><span class="name">Node.js</span
-          ><span class="cat">Backend / Runtime</span
-          ><span class="bar"><i data-w="82"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">06</span><span class="name">SCSS</span
-          ><span class="cat">Frontend / Styling</span
-          ><span class="bar"><i data-w="94"></i></span>
-        </div>
-        <div class="row">
-          <span class="n">07</span><span class="name">HTML / CSS</span
-          ><span class="cat">Frontend / Core</span
-          ><span class="bar"><i data-w="97"></i></span>
+      <div class="stack">
+        <div v-for="(stack, index) in stacks" :key="index" class="stack__row">
+          <span class="stack__index">{{ index + 1 }}</span>
+          <span class="stack__name">{{ $rt(stack.name) }}</span>
+          <span class="stack__category">{{ $rt(stack.category) }}</span>
+          <span class="stack__bar">
+            <i :data-w="$rt(stack.percentage)"></i>
+          </span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services">
+  <!-- Services -->
+  <section id="services" class="section">
     <div class="wrap">
       <div class="sec-label"><b>02</b><span>/ Services</span></div>
       <h2 class="sec-h">
