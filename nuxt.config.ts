@@ -8,4 +8,39 @@ export default defineNuxtConfig({
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
   },
+  css: ['~/assets/css/main.css'],
+
+  i18n: {
+    locales: [
+      {
+        code: 'fr',
+        language: 'fr-FR',
+        name: 'Français',
+        file: 'fr.json',
+      },
+      {
+        code: 'en',
+        language: 'en-US',
+        name: 'English',
+        file: 'en.json',
+      },
+    ],
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default', // /en/services mais /services pour FR
+    langDir: 'locales/',
+    compilation: {
+      strictMessage: false,
+      escapeHtml: false,
+    },
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   redirectOn: 'root',
+    // },
+    // vueI18n: './i18n.config.ts',
+    // compilation: {
+    //   strictMessage: false,
+    //   escapeHtml: false,
+    // },
+  },
 });
