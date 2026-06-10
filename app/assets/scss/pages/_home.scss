@@ -1,0 +1,89 @@
+@use '../abstracts/' as *;
+
+.services {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 1px solid $color-border;
+
+        @include tablet-lg {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .service {
+        padding: 32px 26px 36px;
+        border-right: 1px solid $color-border;
+        transition: .18s;
+
+        @include tablet-lg {
+            border-right: none;
+            border-bottom: 1px solid $color-border;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:hover {
+            background: $color-accent;
+            color: $color-accent-ink;
+
+            .service__index {
+                color: $color-accent-ink;
+            }
+
+            li {
+                color: $color-accent-ink;
+            }
+
+            li::before {
+                color: $color-accent-ink;
+            }
+        }
+
+        &__index {
+            font-size: 12px;
+            color: $color-accent;
+        }
+
+        &__title {
+            font-size: 22px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            margin: 15px 0 11px;
+            line-height: 1.08;
+        }
+
+        &__description {
+            font-size: 14px;
+            opacity: .9;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        li {
+            font-size: 12px;
+            color: $color-text-secondary;
+            display: flex;
+            gap: 9px;
+        }
+
+        li::before {
+            content: ">";
+            color: $color-accent;
+        }
+    }
+}

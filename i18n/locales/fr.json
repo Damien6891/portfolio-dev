@@ -58,15 +58,23 @@
         "services" : {
             "headline" : "services",
             "title": "Comment je travaille",
-            "websites" : {
-                "title": "Sites vitrines",
-                "description": "Rapides, optimisés SEO, pensés pour convertir. Nuxt &amp; SSR.",
-                "skills" : {
-                    "1" : "Performance",
-                    "2" : "SEO technique",
-                    "3" : "Responsive"
+             "items" : [
+                {
+                    "title": "Site vitrines",
+                    "description": "Rapides, optimisés SEO, pensés pour convertir. Nuxt & SSR.",
+                    "skills": ["Performance", "SEO", "Responsive"]
+                },
+                {
+                    "title": "SaaS",
+                    "description": "Architecture, auth, dashboards et API évolutives. Laravel & Node.",
+                    "skills": ["Auth & rôles", "REST API", "Temps réel"]
+                },
+                {
+                    "title": "Collaboration agence",
+                    "description": "Sous-traitance en marque blanche, intégrée à vos process.",
+                    "skills": ["Git flow", "Code reviews", "Délais tenus"]
                 }
-            }
+            ]
         }
     },
 

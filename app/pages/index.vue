@@ -2,6 +2,7 @@
 const { tm, rt } = useI18n();
 
 const stacks = computed(() => tm('home.stack.items'));
+const services = computed(() => tm('home.services.items'));
 </script>
 
 <template>
@@ -75,70 +76,29 @@ const stacks = computed(() => tm('home.stack.items'));
   </section>
 
   <!-- Services -->
-  <section id="services" class="section">
+  <section id="services" class="section services">
     <div class="wrap">
-      <div class="sec-label"><b>02</b><span>/ Services</span></div>
-      <h2 class="sec-h">
-        <span data-fr>Comment je travaille</span><span data-en>How I help</span>
+      <div class="section__headline">
+        <b>02</b>/
+        {{ $t('home.services.headline') }}
+      </div>
+      <h2 class="section__title">
+        {{ $t('home.services.title') }}
       </h2>
     </div>
-    <div class="svc-grid">
-      <div class="svc">
-        <span class="svc-n">[ 01 ]</span>
-        <h3>
-          <span data-fr>Sites vitrines</span
-          ><span data-en>Marketing sites</span>
+
+    <div class="services__grid">
+      <div v-for="(service, index) in services" :key="index" class="service">
+        <span class="service__index">[ 0{{ index + 1 }} ]</span>
+        <h3 class="service__title">
+          {{ $rt(service.title) }}
         </h3>
-        <p>
-          <span data-fr
-            >Rapides, optimisés SEO, pensés pour convertir. Nuxt &amp;
-            SSR.</span
-          ><span data-en
-            >Fast, SEO-ready, built to convert. Nuxt &amp; SSR.</span
-          >
+        <p class="service__description">
+          {{ $rt(service.description) }}
         </p>
         <ul>
-          <li>Performance</li>
-          <li>SEO technique</li>
-          <li>Responsive</li>
-        </ul>
-      </div>
-      <div class="svc">
-        <span class="svc-n">[ 02 ]</span>
-        <h3><span data-fr>SaaS</span><span data-en>SaaS apps</span></h3>
-        <p>
-          <span data-fr
-            >Architecture, auth, dashboards et API évolutives. Laravel &amp;
-            Node.</span
-          ><span data-en
-            >Architecture, auth, dashboards and scalable APIs. Laravel &amp;
-            Node.</span
-          >
-        </p>
-        <ul>
-          <li>Auth &amp; rôles</li>
-          <li>REST API</li>
-          <li><span data-fr>Temps réel</span><span data-en>Real-time</span></li>
-        </ul>
-      </div>
-      <div class="svc">
-        <span class="svc-n">[ 03 ]</span>
-        <h3>
-          <span data-fr>Renfort agence</span><span data-en>Agency support</span>
-        </h3>
-        <p>
-          <span data-fr
-            >Sous-traitance en marque blanche, intégrée à vos process.</span
-          ><span data-en
-            >White-label subcontracting, plugged into your process.</span
-          >
-        </p>
-        <ul>
-          <li>Git flow</li>
-          <li>Code reviews</li>
-          <li>
-            <span data-fr>Délais tenus</span
-            ><span data-en>On-time delivery</span>
+          <li v-for="(skill, index) in service.skills" :key="index">
+            {{ $rt(skill) }}
           </li>
         </ul>
       </div>
