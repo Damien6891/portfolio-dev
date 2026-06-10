@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "stack": "stack",
+        "services": "services",
+        "projects": "work",
+        "education": "education",
+        "contact": "contact"
+    },
+    "home" : {
+        "title_1": "Custom",
+        "title_2": "websites",
+        "title_3": "& apps",
+        "description" : "Freelance full-stack web developer. I build marketing sites and SaaS platforms for agencies and product teams."
+    },
+
+    "see_projects": "See the work",
+    "see_all_projects": "See all projects",
+    "available": "Available"
+}

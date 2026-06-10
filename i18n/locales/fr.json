@@ -1,0 +1,20 @@
+{
+    "nav": {
+        "stack": "stack",
+        "services": "services",
+        "projects": "projets",
+        "education": "formation",
+        "contact": "contact"
+    },
+    "home": {
+        "title_1": "Sites",
+        "title_2": "applications",
+        "title_3": "sur-mesure",
+        "title": "Sites <span class=\"amp\">&amp;</span><br /><span class=\"g\">applications</span><br />sur-mesure",
+        "description": "Développeur web full-stack freelance. Je construis des sites vitrines et des plateformes SaaS pour les agences et les équipes produit."
+    },
+
+    "see_projects": "Voir les projets",
+    "see_all_projects": "Voir tous les projets",
+    "available": "Disponible"
+}
