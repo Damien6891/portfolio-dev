@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+:root {
+    // surfaces
+    --color-surface-deep: #{$color-surface-deep};
+    --color-surface-base: #{$color-surface-base};
+    --color-surface-raised: #{$color-surface-raised};
+
+    // bordures
+    --color-border: #{$color-border};
+    --color-border-subtle: #{$color-border-subtle};
+
+    // texte
+    --color-text-primary: #{$color-text-primary};
+    --color-text-secondary: #{$color-text-secondary};
+    --color-text-disabled: #{$color-text-disabled};
+
+    // accent
+    --color-accent: #{$color-accent};
+    --color-accent-dim: #{$color-accent-dim};
+    --color-accent-ink: #{$color-accent-ink};
+
+    // typo
+    --font-mono: #{$font-mono};
+}

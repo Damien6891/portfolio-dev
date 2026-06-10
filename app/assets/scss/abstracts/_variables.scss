@@ -1,0 +1,25 @@
+// ─── Couleurs de surface ────────────────
+$color-surface-deep: oklch(0.165 0.012 255); // --bg
+$color-surface-base: oklch(0.205 0.014 255); // --bg-2
+$color-surface-raised: oklch(0.235 0.015 255); // --panel
+
+// ─── Bordures ───────────────────────────
+$color-border: oklch(0.42 0.014 255); // --line
+$color-border-subtle: oklch(0.3 0.014 255); // --line-soft
+
+// ─── Texte ──────────────────────────────
+$color-text-primary: oklch(0.96 0.005 255); // --ink
+$color-text-secondary: oklch(0.68 0.012 255); // --muted
+$color-text-disabled: oklch(0.52 0.012 255); // --faint
+
+// ─── Accent (vert) ──────────────────────
+$color-accent: oklch(0.86 0.17 142); // --acc
+$color-accent-dim: oklch(0.72 0.13 142); // --acc-dim
+$color-accent-ink: oklch(0.22 0.05 142); // --acc-ink
+
+// ─── Espacements ────────────────────────
+$space-xs: 8px;
+$space-sm: 14px;
+$space-md: 24px;
+$space-lg: 40px;
+$space-xl: 66px;

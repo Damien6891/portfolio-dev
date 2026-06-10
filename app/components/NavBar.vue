@@ -3,11 +3,13 @@ const { setLocale, locales, locale: currentLocal } = useI18n();
 </script>
 
 <template>
-  <nav>
+  <nav class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top"><span class="sq"></span>damien_hantzer</a>
-      <div class="nav-r">
-        <div class="nav-links">
+      <a class="nav__brand" href="#top">
+        <span class="sq"></span>damien_hantzer
+      </a>
+      <div class="nav__right">
+        <div class="nav__links">
           <a href="#stack">{{ $t('nav.stack') }}</a>
           <a href="#services">{{ $t('nav.services') }}</a>
           <NuxtLink to="/projects">
@@ -18,7 +20,7 @@ const { setLocale, locales, locale: currentLocal } = useI18n();
           </a>
           <a href="#contact">{{ $t('nav.contact') }}</a>
         </div>
-        <div class="lang">
+        <div class="nav__lang">
           <button
             v-for="(locale, index) in locales"
             :key="index"

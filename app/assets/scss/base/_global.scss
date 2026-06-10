@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+body {
+    background: var(--color-surface-deep);
+    color: var(--color-text-primary);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 26px;
+}

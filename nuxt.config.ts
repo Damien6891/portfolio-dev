@@ -8,7 +8,10 @@ export default defineNuxtConfig({
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
   },
-  css: ['~/assets/css/main.css'],
+  css: [
+    // '~/assets/css/main.css',
+    '~/assets/scss/main.scss',
+  ],
 
   i18n: {
     locales: [

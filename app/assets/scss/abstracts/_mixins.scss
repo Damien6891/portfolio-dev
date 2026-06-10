@@ -1,0 +1,41 @@
+// Breakpoints
+@mixin mobile {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin tablet-lg {
+    @media (max-width: 880px) {
+        @content;
+    }
+}
+
+// Section separator
+@mixin section-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: $text-size-sm;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-disabled);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+// Hover lift (boutons)
+@mixin hover-lift {
+    transition: .15s;
+
+    &:hover {
+        box-shadow: 0 0 0 4px oklch(0.86 0.17 142 / 0.18);
+        transform: translateY(-1px);
+    }
+}
