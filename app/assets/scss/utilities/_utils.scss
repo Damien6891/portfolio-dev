@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.text-accent {
+    color: $color-accent;
+}
+
+.text-muted {
+    color: $color-text-disabled;
+}

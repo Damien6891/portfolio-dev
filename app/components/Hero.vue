@@ -5,23 +5,31 @@ defineProps({
 </script>
 
 <template>
-  <header id="top">
+  <header id="top" class="hero">
     <div class="wrap">
-      <slot name="meta"></slot>
+      <div v-if="$slots.meta" class="hero__meta">
+        <slot name="meta" />
+      </div>
 
-      <div class="hero-main">
-        <slot name="headline"></slot>
+      <!-- <slot name="meta"></slot> -->
 
-        <slot name="title"></slot>
+      <div class="hero__main">
+        <div v-if="$slots.headline" class="hero__headline">
+          <slot name="headline"></slot>
+        </div>
 
-        <div class="hero-foot">
-          <p>
-            <span class="pr">~$</span>
+        <h1>
+          <slot name="title"></slot>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__description">
+            <span class="text-accent">~$</span>
 
             {{ description }}
           </p>
 
-          <div class="hero-cta">
+          <div class="hero__cta">
             <slot name="cta"></slot>
           </div>
         </div>
