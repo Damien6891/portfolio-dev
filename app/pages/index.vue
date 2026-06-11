@@ -28,12 +28,22 @@ const { data: projects } = await useAsyncData(
     </template>
 
     <template #title>
-      {{ $t('home.title_1') }}
-      <span class="text-muted">&amp;</span>
-      <br />
-      <span class="text-accent">{{ $t('home.title_2') }}</span>
-      <br />
-      {{ $t('home.title_3') }}
+      <div v-if="locale === 'fr'">
+        {{ $t('home.title_1') }}
+        <span class="text-muted">&amp;</span>
+        <br />
+        <span class="text-accent">{{ $t('home.title_2') }}</span>
+        <br />
+        {{ $t('home.title_3') }}
+      </div>
+      <div v-else>
+        {{ $t('home.title_1') }}
+        <br />
+        <span class="text-accent">{{ $t('home.title_2') }}</span>
+        <br />
+        <span class="text-muted">&amp;</span>
+        {{ $t('home.title_3') }}
+      </div>
     </template>
 
     <template #cta>
