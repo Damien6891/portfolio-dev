@@ -41,6 +41,15 @@
             position: relative;
             transition: color .15s;
 
+            &.active {
+                color: $color-accent;
+
+                &::before,
+                &::after {
+                    color: $color-accent;
+                }
+            }
+
             &::before {
                 content: "[";
                 color: var(--color-text-disabled);
