@@ -1,0 +1,29 @@
+@use './abstracts/' as *;
+
+.prose {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 26px;
+
+    h1 {
+        color: $color-accent;
+    }
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    p {
+        color: $color-text-secondary;
+    }
+
+    hr {
+        margin-block: 2rem;
+        color: $color-border-subtle;
+        border-color: $color-border-subtle;
+    }
+
+    a {
+        text-decoration: underline $color-accent;
+    }
+}
