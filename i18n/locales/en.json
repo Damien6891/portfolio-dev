@@ -74,6 +74,10 @@
                     "skills": ["Git flow", "Code reviews", "On-time delivery"]
                 }
             ]
+        },
+
+        "projects": {
+            "headline": "Selected work"
         }
     },
 

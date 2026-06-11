@@ -1,8 +1,18 @@
 <script setup>
-const { tm, rt } = useI18n();
+const { tm, rt, locale } = useI18n();
+const localePath = useLocalePath();
 
 const stacks = computed(() => tm('home.stack.items'));
 const services = computed(() => tm('home.services.items'));
+
+const collectionName = computed(() => `projects_${locale.value}`);
+
+const { data: projects } = await useAsyncData(
+  `featured-projects-${locale.value}`,
+  () =>
+    queryCollection(collectionName.value).where('featured', '=', true).all(),
+  { watch: locale },
+);
 </script>
 
 <template>
@@ -102,6 +112,43 @@ const services = computed(() => tm('home.services.items'));
           </li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="work" class="section work">
+    <div class="wrap">
+      <div class="section__headline">
+        <b>03</b>/
+        {{ $t('home.projects.headline') }}
+      </div>
+    </div>
+
+    <div class="grid">
+      <NuxtLink
+        v-for="(project, index) in projects"
+        :key="index"
+        :to="localePath(`${project.path}`)"
+        class="card"
+      >
+        <div class="card__image"><span>[ dashboard SaaS ]</span></div>
+
+        <div class="card__head">
+          <h3>
+            {{ project.title }}
+          </h3>
+          <!-- <span class="yr">'25</span> -->
+        </div>
+
+        <p>
+          {{ project.description }}
+        </p>
+
+        <div class="card__tags">
+          <span v-for="(techno, index) in project.technologies" :key="index">
+            {{ techno }}
+          </span>
+        </div>
+      </NuxtLink>
     </div>
   </section>
 </template>

@@ -75,6 +75,10 @@
                     "skills": ["Git flow", "Code reviews", "Délais tenus"]
                 }
             ]
+        },
+
+        "projects" :{
+            "headline": "Projets sélectionnés"
         }
     },
 

@@ -87,3 +87,23 @@
         }
     }
 }
+
+.work {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid $color-border;
+
+        max-width: 1280px;
+        margin-inline: auto;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .card:nth-child(2n) {
+        border-right: none;
+    }
+
+}
