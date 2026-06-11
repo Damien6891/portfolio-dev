@@ -47,4 +47,10 @@ export default defineNuxtConfig({
     //   escapeHtml: false,
     // },
   },
+
+  content: {
+    renderer: {
+      anchorLinks: false,
+    },
+  },
 });
