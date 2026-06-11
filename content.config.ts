@@ -24,6 +24,20 @@ const projectSchema = z.object({
 
 export default defineContentConfig({
   collections: {
+    pages_fr: defineCollection({
+      type: 'page',
+      source: {
+        include: 'fr/*.md',
+      },
+    }),
+
+    pages_en: defineCollection({
+      type: 'page',
+      source: {
+        include: 'en/*.md',
+      },
+    }),
+
     projects_en: defineCollection({
       type: 'page',
       source: {
