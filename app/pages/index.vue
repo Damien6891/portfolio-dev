@@ -115,6 +115,7 @@ const { data: projects } = await useAsyncData(
     </div>
   </section>
 
+  <!-- WORK -->
   <section id="work" class="section work">
     <div class="wrap">
       <div class="section__headline">
@@ -149,6 +150,70 @@ const { data: projects } = await useAsyncData(
           </span>
         </div>
       </NuxtLink>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="wrap">
+      <div class="section__headline">
+        <b>04</b>/ {{ $t('home.formation.headline') }}
+      </div>
+      <h2 class="section__title">
+        {{ $t('home.formation.title') }}
+      </h2>
+
+      <div class="education__wrapper">
+        <div class="education__card">
+          <div class="education__date">
+            <span class="yr"> {{ $t('home.formation.selfTaught.date') }}</span>
+          </div>
+          <div>
+            <div class="education__school">
+              {{ $t('home.formation.selfTaught.title') }}
+            </div>
+
+            <p class="education__description">
+              {{ $t('home.formation.selfTaught.description') }}
+            </p>
+            <div class="education__skills">
+              <span
+                v-for="(skill, index) in tm('home.formation.selfTaught.tags')"
+                :key="index"
+              >
+                {{ rt(skill) }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education__card">
+          <div class="education__date">
+            <span class="yr"> {{ $t('home.formation.epitech.date') }}</span>
+            {{ $t('home.formation.epitech.location') }}
+          </div>
+          <div>
+            <div class="education__school">Epitech</div>
+            <div class="education__subtitle">
+              <span class="tick text-accent">&gt;</span> Coding Academy — Dev
+              &amp; Go
+              <span class="text-muted">→</span>
+              {{ $t('home.formation.epitech.short_description') }}
+            </div>
+            <p class="education__description">
+              {{ $t('home.formation.epitech.description') }}
+            </p>
+            <div class="education__skills">
+              <span
+                v-for="(skill, index) in tm('home.formation.epitech.tags')"
+                :key="index"
+              >
+                {{ rt(skill) }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>

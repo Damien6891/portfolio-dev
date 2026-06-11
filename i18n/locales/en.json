@@ -78,7 +78,26 @@
 
         "projects": {
             "headline": "Selected work"
+        },
+
+         "formation" : {
+            "headline": "Education",
+            "title": "Where I learned",
+            "selfTaught": {
+                "date": "2019",
+                "title": "Self-Taught",
+                "description": "The 2020 lockdown gave me the time to explore something new. I started teaching myself web development from scratch, at home — HTML, CSS, then JavaScript and PHP, working through OpenClassrooms courses, YouTube tutorials, and anything else I could find. What started as something to keep busy quickly became a genuine passion, and eventually a career.",
+                "tags": ["HTML", "CSS", "PHP", "Javascript"]
+            },
+            "epitech": {
+                "date": "2020",
+                "location": "",
+                "short_description": "Full-Stack specialization — Code &amp; Go",
+                "description": "Intensive web development training: from programming fundamentals to building full-stack applications in real project conditions, followed by a production-focused full-stack specialization.",
+                "tags": ["Full stack", "Architecture", "API", "Teamwork", "Project work"]
+            }
         }
+        
     },
 
     "see_projects": "See the work",

@@ -79,6 +79,24 @@
 
         "projects" :{
             "headline": "Projets sélectionnés"
+        },
+
+        "formation" : {
+            "headline": "Formation",
+            "title": "Où j'ai appris",
+             "selfTaught": {
+                "date": "2019",
+                "title": "Autodidacte",
+                "description": "Le confinement de 2020 m'a donné le temps d'explorer quelque chose de nouveau. J'ai commencé à apprendre le développement web seul, depuis chez moi — HTML, CSS, puis JavaScript et PHP, en enchaînant les cours sur OpenClassrooms, les tutoriels YouTube et tout ce que je pouvais trouver. Ce qui devait être une occupation est devenu une vraie passion, puis un métier.",
+                "tags": ["HTML", "CSS", "PHP", "Javascript"]
+            },
+            "epitech": {
+                "date": "2020",
+                "location": "Mulhouse, France",
+                "short_description": "Spécialisation Full-Stack — Code & Go",
+                "description": "Formation intensive au développement web : des fondamentaux de la programmation à la conception d'applications full-stack en conditions projet, puis spécialisation full-stack orientée production.",
+                "tags": ["Full stack", "Architecture", "API", "Travail en équipe", "Gestion de projet"]
+            }
         }
     },
 
