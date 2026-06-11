@@ -14,7 +14,7 @@ const isActive = (hash) => {
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="nav__brand" href="/#top">
-        <span class="sq"></span>damien_hantzer
+        <span class="square square--glow"></span>damien_hantzer
       </a>
       <div class="nav__right">
         <div class="nav__links">

@@ -24,7 +24,7 @@ const { data: projects } = await useAsyncData(
     </template>
 
     <template #headline>
-      <span class="d"></span>{{ $t('available') }}
+      <span class="circle circle--anim"></span>{{ $t('available') }}
     </template>
 
     <template #title>

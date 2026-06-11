@@ -30,24 +30,6 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: $color-accent;
-
-        .d {
-            width: 9px;
-            height: 9px;
-            border-radius: 50%;
-            background: $color-accent;
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset: -4px;
-                border-radius: 50%;
-                border: 1px solid $color-accent;
-                animation: ping 1.9s ease-out infinite;
-            }
-        }
-
     }
 
     h1 {
