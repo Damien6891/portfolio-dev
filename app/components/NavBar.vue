@@ -10,15 +10,15 @@ const { setLocale, locales, locale: currentLocal } = useI18n();
       </a>
       <div class="nav__right">
         <div class="nav__links">
-          <a href="#stack">{{ $t('nav.stack') }}</a>
-          <a href="#services">{{ $t('nav.services') }}</a>
+          <a href="/#stack">{{ $t('nav.stack') }}</a>
+          <a href="/#services">{{ $t('nav.services') }}</a>
           <NuxtLink to="/projects">
             {{ $t('nav.projects') }}
           </NuxtLink>
-          <a href="#edu">
+          <a href="/#education">
             {{ $t('nav.education') }}
           </a>
-          <a href="#contact">{{ $t('nav.contact') }}</a>
+          <a href="/#contact">{{ $t('nav.contact') }}</a>
         </div>
         <div class="nav__lang">
           <button
