@@ -1,9 +1,9 @@
 @use '../abstracts/' as *;
 
 .marquee {
-    border-bottom: 2px solid var(--line);
+    border-bottom: 2px solid $color-border;
     overflow: hidden;
-    background: var(--bg-2);
+    background: $color-surface-base;
 
     &__track {
         display: flex;
