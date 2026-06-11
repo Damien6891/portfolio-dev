@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 11.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-text-disabled;
+        padding: 22px 0;
+    }
+}
