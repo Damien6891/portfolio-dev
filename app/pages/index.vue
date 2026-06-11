@@ -216,4 +216,6 @@ const { data: projects } = await useAsyncData(
       </div>
     </div>
   </section>
+
+  <Contact />
 </template>

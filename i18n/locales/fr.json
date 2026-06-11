@@ -100,6 +100,12 @@
         }
     },
 
+    "contact": {
+        "title_1": "Travaillons",
+        "title_2": "ensemble",
+        "description": "Disponible pour missions freelance et collaborations d'agence. Réponse sous 24h."
+    },
+
     "see_projects": "Voir les projets",
     "see_all_projects": "Voir tous les projets",
     "available": "Disponible"

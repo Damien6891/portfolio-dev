@@ -100,6 +100,12 @@
         
     },
 
+    "contact": {
+        "title_1": "Let's build",
+        "title_2": "together",
+        "description": "Available for freelance work and agency collaborations. Reply within 24h."
+    },
+
     "see_projects": "See the work",
     "see_all_projects": "See all projects",
     "available": "Available"

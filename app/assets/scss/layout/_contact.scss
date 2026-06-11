@@ -1,0 +1,55 @@
+@use '../abstracts/' as *;
+
+.contact {
+    padding: 66px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(560px 280px at 50% 0%, oklch(0.86 0.17 142 / 0.09), transparent 70%);
+    }
+
+    &__headline {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $color-accent;
+        position: relative;
+    }
+
+    &__title {
+        font-size: clamp(32px, 6.5vw, 84px);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -0.04em;
+        line-height: 0.98;
+        margin-top: 16px;
+        position: relative;
+    }
+
+    p {
+        font-size: 13.5px;
+        color: $color-text-secondary;
+        margin: 20px auto 28px;
+        max-width: 460px;
+        position: relative;
+        line-height: 1.6;
+    }
+
+    &__mail {
+        display: inline-block;
+        font-size: clamp(15px, 2.4vw, 22px);
+        border-bottom: 3px solid $color-accent;
+        padding-bottom: 4px;
+        transition: .15s;
+        position: relative;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
