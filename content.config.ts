@@ -24,6 +24,11 @@ const projectSchema = z.object({
   role: z.string().optional(),
   gridClasses: z.array(z.string()).optional(),
   order: z.number().optional(),
+  type: z.string().optional(),
+  role: z.string().optional(),
+  year: z.string().optional(),
+  duration: z.string().optional(),
+  status: z.string().optional(),
 });
 
 export default defineContentConfig({
