@@ -13,11 +13,13 @@
         color: var(--faint);
         padding: 16px 0;
         border-bottom: 1px solid $color-border-subtle;
+
+        b {
+            color: $color-accent;
+        }
     }
 
-    b {
-        color: $color-accent;
-    }
+
 
     &__title {
         font-size: clamp(26px, 4.4vw, 50px);
