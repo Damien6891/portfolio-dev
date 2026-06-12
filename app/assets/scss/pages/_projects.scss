@@ -1,0 +1,21 @@
+.page--projects {
+    .hero__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        p {
+            max-width: 360px;
+        }
+    }
+
+    .hero__foot {
+        display: block;
+    }
+
+    .grid {
+        padding-block: 28px 60px;
+    }
+}

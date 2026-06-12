@@ -6,7 +6,9 @@ import { z } from 'zod';
 const projectSchema = z.object({
   order: z.number(),
   title: z.string(),
+  projectTitle: z.string().optional(),
   description: z.string(),
+  projectDescription: z.string().optional(),
   category: z.string().optional(),
   date: z.string().optional(),
   technologies: z.array(z.string()).optional(),
@@ -20,6 +22,8 @@ const projectSchema = z.object({
   agency: z.string().optional(),
   agencyUrl: z.string().url().optional(),
   role: z.string().optional(),
+  gridClasses: z.array(z.string()).optional(),
+  order: z.number().optional(),
 });
 
 export default defineContentConfig({
