@@ -100,6 +100,13 @@
         }
     },
 
+    "projects": {
+        "headline": "archive complète",
+        "title_1": "Tous les",
+        "title_2": "Projets",
+        "description": "Une sélection de sites, plateformes SaaS et outils métier — du plus ambitieux aux expérimentations."
+    },
+
     "contact": {
         "title_1": "Travaillons",
         "title_2": "ensemble",

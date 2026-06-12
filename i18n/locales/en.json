@@ -100,6 +100,13 @@
         
     },
 
+    "projects": {
+        "headline": "full archive",
+        "title_1": "All my",
+        "title_2": "Projects",
+        "description": "A selection of websites, SaaS platforms and business tools — from the most ambitious to side experiments."
+    },
+
     "contact": {
         "title_1": "Let's build",
         "title_2": "together",
