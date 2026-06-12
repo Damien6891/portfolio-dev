@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.table {
+    border: 1.5px solid $color-border;
+    width: 100%;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 11px 15px;
+        border-bottom: 1px solid $color-border-subtle;
+        font-size: 12px;
+    }
+
+    .label {
+        color: $color-text-disabled;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .value {
+        color: $color-text-primary;
+        font-weight: 600;
+        text-align: right;
+
+        &.status {
+            color: $color-accent;
+        }
+    }
+}
