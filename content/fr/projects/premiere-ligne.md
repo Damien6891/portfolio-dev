@@ -1,118 +1,203 @@
 ---
-type: project
-title: Première Ligne 68 - Boutique prêt-à-porter féminin
-description: Création d'un site vitrine élégant pour une boutique de mode haut de gamme à Mulhouse, en collaboration avec DGS Création
-category: showcase
+type: site vitrine
+projectTitle: "Site vitrine<br/> <span class='text-accent'>boutique</span><br/>mode féminine"
+title: Site Vitrine - Boutique Mode
+projectDescription: Développement d'un site vitrine moderne et performant pour une boutique de prêt-à-porter féminin haut de gamme à Mulhouse, en collaboration avec l'agence DGS Création
+description: Site vitrine développé en collaboration avec une agence web
+category: website
 collaboration: true
-client: Première Ligne 68
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Développeur web
-date: 2023-05-20
+role: Développeur Frontend
+date: 2023-04-01
 technologies:
     - WordPress
-    - WooCommerce
-    - Galeries photo
+    - PHP
+    - Javascript
 featured: true
 image: /images/premiere-ligne/premiere-ligne_mockup.png
-# image: /images/premiere-ligne/premiere-ligne_hero.png
-imageCard: /images/premiere-ligne/premiere-ligne_card.png
-scrollImage: /images/premiere-ligne/premiere-ligne_landingPage.jpg
+imageCard: /images/premiere-ligne/premiere-ligne_hero.png
+scrollImage: /images/premiere-ligne/premiere-ligne_landing-page.png
 url: https://www.premiereligne68.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 60
+role: Développeur Frontend
+status: live
+duration: 
+year: 2023
 ---
 
 
-## Le contexte
+::content-section
 
-Première Ligne 68, boutique de prêt-à-porter féminin haut de gamme située au cœur historique de Mulhouse depuis 1985, souhaitait moderniser sa présence en ligne.
+#headline
+:::section-headline
+---
+number: '01'
+title: Contexte
+---
+:::
 
-Le site devait refléter l'élégance de la boutique, présenter les collections et marques exclusives, et valoriser l'expérience client personnalisée qui fait la réputation de l'enseigne.
+#title
+Le projet
 
+#default
+:::grid
+::::grid-column
+:inline-label[Le besoin:] Première Ligne, boutique multimarques de prêt-à-porter féminin haut de gamme implantée à Mulhouse depuis 1985, souhaitait un site moderne pour mettre en valeur ses collections, ses marques et ses événements, et renforcer sa présence en ligne.
+
+::::
+
+::::grid-column
+:inline-label[L'approche:] Une collaboration avec l'agence DGS Création — identité visuelle et maquettes de leur côté, intégration et développement technique du mien.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: Ce que j'ai construit
 ---
-:::project-gallery
+:::
+
+#title
+Fonctionnalités clés
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Intégration pixel-perfect
+text: Développement fidèle aux maquettes fournies par l'agence, avec une attention particulière au rendu sur tous les appareils.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Autonomie client
+text: Interface d'administration sur-mesure permettant au client de gérer ses collections, ses marques, ses événements et ses actualités sans intervention technique.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Création de types de contenus dédiés pour les collections, les marques et les événements, combinés à Advanced Custom Fields pour une gestion de contenu structurée et évolutive.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Collaboration agence
+text: Intégration dans un workflow professionnel — respect des livrables, communication fluide et livraison dans les délais.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Stack technique
+---
+:::
+
+#title
+Langages & outils
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Galerie
+---
+:::
+
+#title
+Écrans
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/premiere-ligne/premiere-ligne_gallery.png,
-        class: object-cover
+        image: premiere-ligne/premiere-ligne_hero.png,
+        title: Page d'accueil,
+        description: Section hero présentant la boutique et sa dernière collection.,
+        class: 'wide'
     },
     {
-        src: /images/premiere-ligne/premiere-ligne_gallery_2.png,
-        class: object-contain
-    }
+        image: premiere-ligne/premiere-ligne_exclu.png,
+        title: Exclusivités,
+        description: Section présentant les exclusivités et redirigeant vers la collection.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_page-brand.png,
+        title: Page marque,
+        description: Page de présentation d'une marque en vente dans la boutique.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_slider-events.png,
+        title: Slider événements,
+        description: Section événements mettant en avant les actualités et occasions spéciales de la boutique.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_presentation-shop.png,
+        title: Page présentation,
+        description: Page de présentation de la boutique.,
+    },
 ]
-class: breakout
 ---
 :::
-::
-
-### Mon rôle dans ce projet
-
-J'ai collaboré avec **[DGS Création](https://www.dgs-creation.fr/)**, agence de création de sites internet, en tant que développeur web freelance.
-
-**Répartition du travail :**
-- **DGS Création** : conception graphique, identité visuelle, maquettes du site, gestion de la relation client
-- **Ma mission** : développement technique complet, intégration des designs, mise en place des galeries
-
-Cette collaboration m'a permis de créer un site élégant qui reflète l'univers raffiné de la boutique et facilite la découverte des collections.
-
-::div
----
-class: full-width 
-background: dark
-padding: large
----
-
-
-## Résultats obtenus
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Vitrine élégante
-description: Un site qui reflète le positionnement haut de gamme de la boutique
-icon: i-lucide-sparkles
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Mise en valeur des collections
-description: Galeries photo optimisées pour présenter les marques et tenues
-icon: i-lucide-image
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Expérience utilisateur fluide
-description: Navigation intuitive adaptée à la clientèle haut de gamme
-icon: i-lucide-mouse-pointer-click
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Compétences mises en œuvre
-
-- Créer une ambiance visuelle cohérente avec l'identité de la marque
-- Optimiser l'affichage de galeries photo pour la mode
-- Adapter le design aux codes du luxe et du prêt-à-porter
-
-
 ::

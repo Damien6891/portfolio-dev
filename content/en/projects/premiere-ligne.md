@@ -1,118 +1,203 @@
 ---
-type: project
-title: Première Ligne 68 - Women's Fashion Boutique
-description: Creation of an elegant showcase website for a high-end fashion boutique in Mulhouse, in collaboration with DGS Création
-category: showcase
+type: website
+projectTitle: "Women's fashion<br/> <span class='text-accent'>boutique</span><br/>showcase"
+title: Website - Fashion Boutique
+projectDescription: Development of a modern and performant showcase website for a high-end women's fashion boutique in Mulhouse, in collaboration with DGS Création agency
+description: Showcase website developed in collaboration with a web agency
+category: website
 collaboration: true
-client: Première Ligne 68
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Web Developer
-date: 2023-05-20
+role: Frontend Developer
+date: 2023-04-01
 technologies:
     - WordPress
-    - WooCommerce
-    - Photo Galleries
+    - PHP
+    - Javascript
 featured: true
 image: /images/premiere-ligne/premiere-ligne_mockup.png
-# image: /images/premiere-ligne/premiere-ligne_hero.png
-imageCard: /images/premiere-ligne/premiere-ligne_card.png
-scrollImage: /images/premiere-ligne/premiere-ligne_landingPage.jpg
+imageCard: /images/premiere-ligne/premiere-ligne_hero.png
+scrollImage: /images/premiere-ligne/premiere-ligne_landing-page.png
 url: https://www.premiereligne68.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 60
+role: Frontend Developer
+status: live
+duration: 2 weeks
+# year: 
 ---
 
 
-## The context
+::content-section
 
-Première Ligne 68, a high-end women's fashion boutique located in the historic heart of Mulhouse since 1985, wanted to modernize its online presence.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-The website needed to reflect the boutique's elegance, showcase exclusive collections and brands, and highlight the personalized customer experience that has built the store's reputation.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] Première Ligne, a high-end multi-brand women's fashion boutique established in Mulhouse since 1985, needed a modern website to showcase their collections, brands and events, and strengthen their online presence.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A collaboration with DGS Création agency — visual identity and mockups on their side, technical integration and development on mine.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: What I built
 ---
-:::project-gallery
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Pixel-perfect integration
+text: Development faithful to the agency's mockups, with close attention to rendering across all screen sizes and devices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Client autonomy
+text: Custom administration interface allowing the client to manage their collections, brands, events and news without any technical intervention.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Dedicated post types for collections, brands and events, combined with Advanced Custom Fields for structured and scalable content management.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Agency collaboration
+text: Integration into a professional workflow — respecting deliverables, clear communication and on-time delivery.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Gallery
+---
+:::
+
+#title
+Screens
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/premiere-ligne/premiere-ligne_gallery.png,
-        class: object-cover
+        image: premiere-ligne/premiere-ligne_hero.png,
+        title: Homepage,
+        description: Hero section presenting the boutique and its latest collection.,
+        class: 'wide'
     },
     {
-        src: /images/premiere-ligne/premiere-ligne_gallery_2.png,
-        class: object-contain
-    }
+        image: premiere-ligne/premiere-ligne_exclu.png,
+        title: Exclusives,
+        description: Section showcasing exclusive pieces and redirecting to the collection.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_page-brand.png,
+        title: Brand page,
+        description: Presentation page for a brand sold in the boutique.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_slider-events.png,
+        title: Events slider,
+        description: Events section highlighting the boutique's latest news and special occasions.,
+    },
+    {
+        image: premiere-ligne/premiere-ligne_presentation-shop.png,
+        title: About page,
+        description: Presentation page of the boutique.,
+    },
 ]
-class: breakout
 ---
 :::
-::
-
-### My role in this project
-
-I collaborated with **[DGS Création](https://www.dgs-creation.fr/)**, a web design agency, as a freelance web developer.
-
-**Work distribution:**
-- **DGS Création**: graphic design, visual identity, website mockups, client relationship management
-- **My mission**: complete technical development, design integration, gallery implementation
-
-This collaboration allowed me to create an elegant website that reflects the boutique's refined universe and facilitates collection discovery.
-
-::div
----
-class: full-width 
-background: dark
-padding: large
----
-
-
-## Results achieved
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Elegant showcase
-description: A website that reflects the boutique's high-end positioning
-icon: i-lucide-sparkles
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Collection highlighting
-description: Optimized photo galleries to present brands and outfits
-icon: i-lucide-image
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Smooth user experience
-description: Intuitive navigation adapted to high-end clientele
-icon: i-lucide-mouse-pointer-click
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Skills implemented
-
-- Create a visual atmosphere consistent with the brand identity
-- Optimize photo gallery display for fashion
-- Adapt design to luxury and ready-to-wear codes
-
-
 ::
