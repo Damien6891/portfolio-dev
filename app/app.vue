@@ -3,5 +3,6 @@
     <NavBar />
     <NuxtPage />
     <Footer />
+    <PhotoLightbox />
   </div>
 </template>

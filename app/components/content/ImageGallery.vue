@@ -7,6 +7,8 @@ defineProps<{
     class: String;
   }>;
 }>();
+
+const { openPhoto } = useLightboxPhoto();
 </script>
 
 <template>
@@ -15,6 +17,7 @@ defineProps<{
       v-for="(item, index) in items"
       :key="index"
       :class="['image-gallery__item', item.class]"
+      @click="openPhoto(items, index)"
     >
       <NuxtImg :src="`/images/${item.image}`" />
       <p v-if="item.title" class="image-gallery__title">
@@ -47,9 +50,11 @@ defineProps<{
     transition: 0.16s;
     cursor: pointer;
     height: 350px;
+    overflow: hidden;
 
     &:hover {
       border-color: $color-accent;
+      box-shadow: 0px 0px 40px -10px $color-accent;
 
       .image-gallery__title {
         color: $color-accent;
@@ -58,6 +63,7 @@ defineProps<{
 
       img {
         opacity: 1;
+        scale: 1.1;
       }
     }
 
