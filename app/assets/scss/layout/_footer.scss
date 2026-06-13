@@ -1,6 +1,8 @@
 @use '../abstracts/' as *;
 
 .footer {
+    border-top: 1px solid $color-border;
+
     &__inner {
         display: flex;
         justify-content: space-between;
