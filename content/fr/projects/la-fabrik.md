@@ -1,108 +1,200 @@
 ---
-type: project
-title: La Fabrik Mulhouse - Espace de bureaux modulables
-description: Création d'un site vitrine pour un espace de bureaux et locaux commerciaux à louer dans un patrimoine industriel rénové à Mulhouse
-category: showcase
+type: site vitrine
+projectTitle: "Site vitrine<br/> <span class='text-accent'>espace</span><br/>coworking"
+title: Site Vitrine - Espace Coworking
+projectDescription: Développement d'un site vitrine moderne et performant pour un espace de coworking à Mulhouse, en collaboration avec l'agence DGS Création
+description: Site vitrine développé en collaboration avec une agence web
+category: website
 collaboration: true
-client: La Fabrik Mulhouse
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Développeur web
-date: 2024-03-10
+role: Développeur Frontend
+date: 2024-01-01
 technologies:
     - WordPress
-    - Formulaires de contact
-    - Optimisation SEO local
-featured: false
-image: /images/la-fabrik/la-fabrik_hero.png
-imageCard: /images/la-fabrik/la-fabrik_card.png
-scrollImage: /images/la-fabrik/la-fabrik_landing-page.jpg
+    - PHP
+    - Javascript
+featured: true
+image: /images/la-fabrik/la-fabrik_mockup.png
+imageCard: /images/la-fabrik/la-fabrik_hero.png
+scrollImage: /images/la-fabrik/la-fabrik_landing-page.png
 url: https://www.la-fabrik-mulhouse.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 40
+role: Développeur Frontend
+status: live
+duration: 
+year: 2024
 ---
 
 
-## Le contexte
+::content-section
 
-La Fabrik Mulhouse propose des espaces de bureaux modulables à louer au cœur d'un ancien bâtiment industriel rénové, situé dans le quartier Dornach à Mulhouse. Avec 4000 m² de surface disponible et des tarifs attractifs, le projet avait besoin d'un site web pour attirer entreprises et professionnels.
-
-Le site devait valoriser le patrimoine industriel unique du lieu, présenter les avantages des espaces (modularité, prix, localisation) et faciliter la prise de contact pour les prospects intéressés.
-
+#headline
+:::section-headline
 ---
-
-::div
----
-class: full-width bg-neutral-900
----
-:::project-gallery
----
-
-
----Card
-:::
-::
-
-### Mon card dans ce projet
-
-J'ai collaboré avec **[DGS Création](https://www.dgs-creation.fr/)**, agence de création de sites internet, en tant que développeur web freelance.
-
-**Répartition du travail :**
-- **DGS Création** : conception graphique, identité visuelle, maquettes du site, gestion de la relation client
-- **Ma mission** : développement technique complet, intégration des designs, optimisation SEO local
-
-Cette collaboration a permis de créer un site attractif qui met en valeur le caractère unique des lieux tout en facilitant la conversion des visiteurs en prospects.
-
-::div
----
-class: full-width 
-background: dark
-padding: large
----
-
-
-## Résultats obtenus
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Mise en valeur du patrimoine
-description: Présentation attractive du bâtiment industriel rénové et de son histoire
-icon: i-lucide-building-2
-spotlight: true
-spotlight-color: primary
+number: '01'
+title: Contexte
 ---
 :::
 
-:::u-page-card
----
-title: Arguments commerciaux clairs
-description: Mise en avant des avantages (prix, modularité, localisation) de manière convaincante
-icon: i-lucide-badge-check
-spotlight: true
-spotlight-color: primary
----
-:::
+#title
+Le projet
 
-:::u-page-card
----
-title: Génération de leads optimisée
-description: Formulaires de contact et appels à l'action stratégiquement placés
-icon: i-lucide-phone-call
-spotlight: true
-spotlight-color: primary
----
+#default
+:::grid
+::::grid-column
+:inline-label[Le besoin:] La Fabrik, espace de coworking et de location de bureaux à Mulhouse, souhaitait un site clair et professionnel pour présenter ses espaces, ses services et ses tarifs aux freelances et entreprises en quête d'un environnement de travail flexible.
+
+::::
+
+::::grid-column
+:inline-label[L'approche:] Une collaboration avec l'agence DGS Création — identité visuelle et maquettes de leur côté, intégration et développement technique du mien.
+
+::::
 :::
 
 ::
 
-### Compétences mises en œuvre
-
-- Valoriser un patrimoine industriel unique à travers le design web
-- Créer un site orienté conversion pour l'immobilier professionnel
-- Optimiser le référencement local pour capter les entreprises de la région
 
 
+::content-section
+---
+fullWidth: true
+---
+
+#headline
+:::section-headline
+---
+number: '02'
+title: Ce que j'ai construit
+---
+:::
+
+#title
+Fonctionnalités clés
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
+---
+label: "[ 01 ]"
+title: Intégration pixel-perfect
+text: Développement fidèle aux maquettes fournies par l'agence, avec une attention particulière au rendu sur tous les appareils.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Autonomie client
+text: Interface d'administration sur-mesure permettant au client de gérer ses espaces, ses offres et son contenu sans intervention technique.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Création de types de contenus dédiés pour chaque type d'espace et d'offre, combinés à Advanced Custom Fields pour une gestion de contenu structurée et évolutive.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Collaboration agence
+text: Intégration dans un workflow professionnel — respect des livrables, communication fluide et livraison dans les délais.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Stack technique
+---
+:::
+
+#title
+Langages & outils
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Galerie
+---
+:::
+
+#title
+Écrans
+
+#default
+:::image-gallery
+---
+items: [
+    {
+        image: la-fabrik/la-fabrik_hero.png,
+        title: Page d'accueil,
+        description: Section hero présentant les espaces de coworking et les offres principales de La Fabrik.,
+        class: 'wide'
+    },
+    {
+        image: la-fabrik/la-fabrik_contact.png,
+        title: Contact,
+        description: Formulaire de contact avec coordonnées.,
+    },
+    {
+        image: la-fabrik/la-fabrik_section.png,
+        title: Custom section,
+        description: Custom section.,
+    },
+    {
+        image: la-fabrik/la-fabrik_gallery.png,
+        title: Gallerie d'images,
+        description: Gallerie d'images pour montrer les espaces de travail.,
+        class: 'wide'
+    },
+ 
+]
+---
+:::
 ::

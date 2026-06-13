@@ -1,107 +1,200 @@
 ---
-type: project
-title: La Fabrik Mulhouse - Flexible Office Space
-description: Creation of a showcase website for modular office and commercial spaces for rent in a renovated industrial heritage building in Mulhouse
-category: showcase
+type: website
+projectTitle: "Coworking<br/> <span class='text-accent'>space</span><br/>showcase"
+title: Website - Coworking Space
+projectDescription: Development of a modern and performant showcase website for a coworking space in Mulhouse, in collaboration with DGS Création agency
+description: Showcase website developed in collaboration with a web agency
+category: website
 collaboration: true
-client: La Fabrik Mulhouse
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Web Developer
-date: 2024-03-10
+role: Frontend Developer
+date: 2024-01-01
 technologies:
     - WordPress
-    - Contact Forms
-    - Local SEO Optimization
-featured: false
-image: /images/la-fabrik/la-fabrik_hero.png
-imageCard: /images/la-fabrik/la-fabrik_card.png
-scrollImage: /images/la-fabrik/la-fabrik_landing-page.jpg
+    - PHP
+    - Javascript
+featured: true
+image: /images/la-fabrik/la-fabrik_mockup.png
+imageCard: /images/la-fabrik/la-fabrik_hero.png
+scrollImage: /images/la-fabrik/la-fabrik_landing-page.png
 url: https://www.la-fabrik-mulhouse.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 40
+role: Frontend Developer
+status: live
+duration: 
+year: 2024
 ---
 
 
-## The context
+::content-section
 
-La Fabrik Mulhouse offers modular office spaces for rent in a renovated former industrial building, located in the Dornach district of Mulhouse. With 4,000 m² of available space and attractive rates, the project needed a website to attract businesses and professionals.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-The website had to showcase the unique industrial heritage of the location, present the space advantages (modularity, price, location), and facilitate contact for interested prospects.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] La Fabrik, a coworking and workspace rental space in Mulhouse, needed a clear and professional website to present their spaces, services and pricing to freelancers and businesses looking for a flexible work environment.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A collaboration with DGS Création agency — visual identity and mockups on their side, technical integration and development on mine.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: What I built
 ---
-:::project-gallery
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Pixel-perfect integration
+text: Development faithful to the agency's mockups, with close attention to rendering across all screen sizes and devices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Client autonomy
+text: Custom administration interface allowing the client to manage their spaces, offers and content without any technical intervention.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Dedicated post types for each workspace type and offer, combined with Advanced Custom Fields for structured and scalable content management.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Agency collaboration
+text: Integration into a professional workflow — respecting deliverables, clear communication and on-time delivery.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Gallery
+---
+:::
+
+#title
+Screens
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/la-fabrik/la-fabrik_gallery-1.png,
-        class: object-contain
-    },{
-        src: /images/la-fabrik/la-fabrik_gallery-2.png,
-        class: object-contain
-    }
+        image: la-fabrik/la-fabrik_hero.png,
+        title: Homepage,
+        description: Hero section presenting La Fabrik's coworking spaces and key offers.,
+        class: 'wide'
+    },
+    {
+        image: la-fabrik/la-fabrik_contact.png,
+        title: Contact,
+        description: Contact form with location details.,
+    },
+    {
+        image: la-fabrik/la-fabrik_section.png,
+        title: Section custom,
+        description: Section custom.,
+    },
+    {
+        image: la-fabrik/la-fabrik_gallery.png,
+        title: Images gallery,
+        description: An image gallery to present working spaces.,
+        class: 'wide'
+    },
+
 ]
-class: breakout
 ---
 :::
 ::
-
-### My role in this project
-
-I collaborated with **[DGS Création](https://www.dgs-creation.fr/)**, a web design agency, as a freelance web developer.
-
-**Work distribution:**
-- **DGS Création**: graphic design, visual identity, website mockups, client relationship management
-- **My mission**: complete technical development, design integration, local SEO optimization
-
-This collaboration resulted in an attractive website that highlights the unique character of the premises while facilitating visitor-to-prospect conversion.
-
-
-
-## Results achieved
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Heritage showcase
-description: Attractive presentation of the renovated industrial building and its history
-icon: i-lucide-building-2
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Clear commercial arguments
-description: Compelling presentation of advantages (price, modularity, location)
-icon: i-lucide-badge-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Optimized lead generation
-description: Contact forms and calls-to-action strategically placed
-icon: i-lucide-phone-call
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Skills implemented
-
-- Showcase unique industrial heritage through web design
-- Create a conversion-oriented website for commercial real estate
-- Optimize local SEO to attract regional businesses
