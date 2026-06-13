@@ -124,5 +124,7 @@
     "role": "role",
     "year": "year",
     "duration": "duration",
-    "status": "status"
+    "status": "status",
+    "partnership": "In collaboration with "
+
 }

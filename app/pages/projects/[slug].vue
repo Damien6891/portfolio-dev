@@ -43,11 +43,11 @@ const { data: project } = await useAsyncData(
             <span class="label">{{ $t('role') }}</span>
             <span class="value">{{ project.role }}</span>
           </div>
-          <div class="table__row">
+          <div v-if="project.year" class="table__row">
             <span class="label">{{ $t('year') }}</span>
             <span class="value">{{ project.year }}</span>
           </div>
-          <div class="table__row">
+          <div v-if="project.duration" class="table__row">
             <span class="label">{{ $t('duration') }}</span>
             <span class="value">{{ project.duration }}</span>
           </div>
@@ -58,6 +58,13 @@ const { data: project } = await useAsyncData(
         </div>
       </template>
     </Hero>
+
+    <div v-if="project.collaboration" class="collab wrap">
+      {{ $t('partnership') }}
+      <NuxtLink :href="project.agencyUrl" target="_blank">
+        {{ project.agency }}
+      </NuxtLink>
+    </div>
 
     <ContentRenderer :value="project" class="prose" />
 
@@ -80,6 +87,37 @@ const { data: project } = await useAsyncData(
 
 <style lang="scss" scoped>
 @use '../../assets/scss/abstracts/' as *;
+
+.collab {
+  padding-block: 15px;
+  border-bottom: 1px solid $color-border;
+  color: $color-text-disabled;
+  text-align: right;
+  font-size: 12px;
+
+  a {
+    color: $color-accent;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      background: $color-accent;
+      bottom: 0;
+      left: 0%;
+      scale: 0 1;
+      transition: 0.2s;
+      transform-origin: left;
+    }
+    &:hover {
+      &::after {
+        scale: 1;
+      }
+    }
+  }
+}
 
 .nextbar {
   padding-block: 50px;
