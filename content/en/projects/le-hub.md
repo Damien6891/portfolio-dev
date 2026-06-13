@@ -1,108 +1,199 @@
 ---
-type: project
-title: Hub Pôle Médical - Medical Offices in Downtown Mulhouse
-description: Creation of a showcase website for a multidisciplinary medical center offering new medical offices for rent in the heart of Mulhouse
-category: showcase
+type: website
+projectTitle: "Medical hub<br/> <span class='text-accent'>showcase</span><br/>website"
+title: Website - Medical Hub
+projectDescription: Development of a modern and performant showcase website for a multidisciplinary medical hub in Mulhouse, in collaboration with DGS Création agency
+description: Showcase website developed in collaboration with a web agency
+category: website
 collaboration: true
-client: Hub Pôle Médical
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Web Developer
-date: 2023-06-15
+role: Frontend Developer
+date: 2023-06-01
 technologies:
     - WordPress
-    - Contact Forms
-    - Medical Local SEO
-featured: false
-image: /images/le-hub/le-hub_hero.png
-imageCard: /images/le-hub/le-hub_card.png
-scrollImage: /images/le-hub/le-hub_landing-page.jpg
+    - PHP
+    - Javascript
+featured: true
+image: /images/hub-pole-medical/hub_mockup.png
+imageCard: /images/le-hub/le-hub_hero.png
+scrollImage: /images/hub-pole-medical/hub_landing-page.png
 url: https://www.hub-pole-medical.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 50
+role: Frontend Developer
+status: live
+duration: 2 weeks
+# year: 2023
 ---
 
 
-## The context
+::content-section
 
-Hub Pôle Médical offers 8 new medical offices (from 19 to 29 m²) for rent or purchase, spread over 600 m² in the heart of Mulhouse's historic center. This medical real estate project needed a website to attract healthcare professionals and present the location's advantages.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-The website had to showcase the central location, modern equipment, and shared services, while explaining rental or purchase options to interested practitioners.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] LE[HUB!], a brand new multidisciplinary medical centre located in the heart of Mulhouse, needed a showcase website to present their spaces, services and attract healthcare professionals looking to set up practice.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A collaboration with DGS Création agency — visual identity and mockups on their side, technical integration and development on mine.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: What I built
 ---
-:::project-gallery
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Pixel-perfect integration
+text: Development faithful to the agency's mockups, with close attention to rendering across all screen sizes and devices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Client autonomy
+text: Custom administration interface allowing the client to update their content, key figures and contact information without any technical intervention.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Dedicated post types for spaces and amenities, combined with Advanced Custom Fields for structured and flexible content management.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Agency collaboration
+text: Integration into a professional workflow — respecting deliverables, clear communication and on-time delivery.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Gallery
+---
+:::
+
+#title
+Screens
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/le-hub/le-hub_gallery-1.png,
-        class: object-contain
+        image: le-hub/le-hub_hero.png,
+        title: Homepage,
+        description: Hero section presenting the medical hub and its key highlights.,
+        class: 'wide'
     },
     {
-        src: /images/le-hub/le-hub_gallery-2.png,
-        class: object-contain
-    }
+        image: le-hub/le-hub_contact.png,
+        title: Contact,
+        description: Contact form and location details for prospective practitioners.,
+    },
+    {
+        image: le-hub/le-hub_page-locaux.png,
+        title: Spaces,
+        description: Presentation page of the available medical spaces.,
+    },
+    {
+        image: le-hub/le-hub_section-1.png,
+        title: Homepage section,
+        description: Homepage section showcasing the available spaces.,
+        class: 'wide'
+    },
 ]
-class: breakout
 ---
 :::
 ::
-
-### My role in this project
-
-I collaborated with **[DGS Création](https://www.dgs-creation.fr/)**, a web design agency, as a freelance web developer.
-
-**Work distribution:**
-- **DGS Création**: graphic design, visual identity, website mockups, client relationship management
-- **My mission**: complete technical development, design integration, medical sector optimization
-
-This collaboration resulted in a professional and reassuring website that highlights the medical center's strengths to convince healthcare professionals to establish their practice there.
-
-
-## Results achieved
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Location showcase
-description: Emphasis on downtown location, accessibility, and proximity to services
-icon: i-lucide-map-pin-check-inside
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Convincing arguments
-description: Clear presentation of advantages (shared services, modern equipment, flexibility)
-icon: i-lucide-stethoscope
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Targeted contact generation
-description: Forms adapted to capture healthcare professionals' interest
-icon: i-lucide-user-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Skills implemented
-
-- Create a B2B website for the medical sector
-- Effectively present a complex professional real estate offering
-- Optimize local SEO to attract regional healthcare professionals
-

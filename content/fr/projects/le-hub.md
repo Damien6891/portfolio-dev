@@ -1,106 +1,199 @@
 ---
-type: project
-title: Hub Pôle Médical - Cabinets médicaux au centre de Mulhouse
-description: Création d'un site vitrine pour un pôle médical pluridisciplinaire proposant des cabinets médicaux neufs à louer au cœur de Mulhouse
-category: showcase
+type: site vitrine
+projectTitle: "Site vitrine<br/> <span class='text-accent'>pôle</span><br/>médical"
+title: Site Vitrine - Pôle Médical
+projectDescription: Développement d'un site vitrine moderne et performant pour un pôle médical pluridisciplinaire à Mulhouse, en collaboration avec l'agence DGS Création
+description: Site vitrine développé en collaboration avec une agence web
+category: website
 collaboration: true
-client: Hub Pôle Médical
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Développeur web
-date: 2023-06-15
+role: Développeur Frontend
+date: 2023-06-01
 technologies:
     - WordPress
-    - Formulaires de contact
-    - SEO médical local
-featured: false
-image: /images/le-hub/le-hub_hero.png
-imageCard: /images/le-hub/le-hub_card.png
-scrollImage: /images/le-hub/le-hub_landing-page.jpg
+    - PHP
+    - Javascript
+featured: true
+image: /images/hub-pole-medical/hub_mockup.png
+imageCard: /images/le-hub/le-hub_hero.png
+scrollImage: /images/le-hub/hub_landing-page.png
 url: https://www.hub-pole-medical.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 50
+role: Développeur Frontend
+status: live
+duration: 
+year: 2023
 ---
 
 
-## Le contexte
+::content-section
 
-Le Hub Pôle Médical propose 8 cabinets médicaux neufs (de 19 à 29 m²) à louer ou à acheter, répartis sur 600 m² au cœur du centre historique de Mulhouse. Ce projet immobilier médical avait besoin d'un site web pour attirer des professionnels de santé et présenter les avantages du lieu.
+#headline
+:::section-headline
+---
+number: '01'
+title: Contexte
+---
+:::
 
-Le site devait valoriser l'emplacement central, les équipements modernes et les services mutualisés, tout en expliquant les options de location ou d'achat aux praticiens intéressés.
+#title
+Le projet
 
+#default
+:::grid
+::::grid-column
+:inline-label[Le besoin:] LE[HUB!], un pôle médical pluridisciplinaire flambant neuf situé au cœur de Mulhouse, avait besoin d'un site vitrine pour présenter ses espaces, ses services et attirer les professionnels de santé souhaitant s'installer.
+
+::::
+
+::::grid-column
+:inline-label[L'approche:] Une collaboration avec l'agence DGS Création — identité visuelle et maquettes de leur côté, intégration et développement technique du mien.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: Ce que j'ai construit
 ---
-:::project-gallery
+:::
+
+#title
+Fonctionnalités clés
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
-    {
-        src: /images/le-hub/le-hub_gallery-1.png,
-        class: object-contain
-    },
-    {
-        src: /images/le-hub/le-hub_gallery-2.png,
-        class: object-contain
-    }
+label: "[ 01 ]"
+title: Intégration pixel-perfect
+text: Développement fidèle aux maquettes fournies par l'agence, avec une attention particulière au rendu sur tous les appareils.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Autonomie client
+text: Interface d'administration sur-mesure permettant au client de mettre à jour son contenu, ses chiffres clés et ses informations de contact sans intervention technique.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Création de types de contenus dédiés pour les espaces et les équipements, combinés à Advanced Custom Fields pour une gestion de contenu structurée et flexible.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Collaboration agence
+text: Intégration dans un workflow professionnel — respect des livrables, communication fluide et livraison dans les délais.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Stack technique
+---
+:::
+
+#title
+Langages & outils
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Galerie
+---
+:::
+
+#title
+Écrans
+
+#default
+:::image-gallery
+---
+items: [
+  {
+    image: le-hub/le-hub_hero.png,
+    title: Page d'accueil,
+    description: Section hero présentant le pôle médical et ses points forts.,
+    class: 'wide'
+  },
+  {
+    image: le-hub/le-hub_contact.png,
+    title: Contact,
+    description: Formulaire de contact et coordonnées pour les praticiens intéressés.,
+  },
+  {
+    image: le-hub/le-hub_page-locaux.png,
+    title: Page locaux,
+    description: Page de présentation des locaux.,
+  },
+  {
+    image: le-hub/le-hub_section-1.png,
+    title: Section page d'acceuil,
+    description: Section page d'acceuil de présentation des locaux.,
+    class: 'wide'
+  },
 ]
-class: breakout
 ---
 :::
 ::
-
-### Mon rôle dans ce projet
-
-J'ai collaboré avec **[DGS Création](https://www.dgs-creation.fr/)**, agence de création de sites internet, en tant que développeur web freelance.
-
-**Répartition du travail :**
-- **DGS Création** : conception graphique, identité visuelle, maquettes du site, gestion de la relation client
-- **Ma mission** : développement technique complet, intégration des designs, optimisation pour le secteur médical
-
-Cette collaboration a permis de créer un site professionnel et rassurant qui met en avant les atouts du pôle médical pour convaincre les professionnels de santé de s'y installer.
-
-## Résultats obtenus
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Valorisation de l'emplacement
-description: Mise en avant du centre-ville, accessibilité et proximité des services
-icon: i-lucide-map-pin-check-inside
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Arguments convaincants
-description: Présentation claire des avantages (mutualisation, équipements modernes, flexibilité)
-icon: i-lucide-stethoscope
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Génération de contacts ciblés
-description: Formulaires adaptés pour capter l'intérêt des professionnels de santé
-icon: i-lucide-user-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Compétences mises en œuvre
-
-- Créer un site orienté B2B pour le secteur médical
-- Présenter efficacement une offre immobilière professionnelle complexe
-- Optimiser le référencement local pour capter les professionnels de santé de la région
