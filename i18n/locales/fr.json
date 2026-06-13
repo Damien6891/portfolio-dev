@@ -104,16 +104,26 @@
         "headline": "archive complète",
         "title_1": "Tous les",
         "title_2": "Projets",
-        "description": "Une sélection de sites, plateformes SaaS et outils métier — du plus ambitieux aux expérimentations."
+        "description": "Une sélection de sites, plateformes SaaS et outils métier — du plus ambitieux aux expérimentations.",
+        "study_case": "Étude de cas"
     },
 
     "contact": {
         "title_1": "Travaillons",
         "title_2": "ensemble",
-        "description": "Disponible pour missions freelance et collaborations d'agence. Réponse sous 24h."
+        "description": "Disponible pour missions freelance et collaborations d'agence. Réponse sous 24h.",
+        "contact_me": "me contacter"
     },
 
     "see_projects": "Voir les projets",
     "see_all_projects": "Voir tous les projets",
-    "available": "Disponible"
+    "see_website": "voir le site",
+    "similar_project": "un projet <span class='text-accent'>similaire</span>?",
+    "other_projects": "autres projets",
+    "available": "Disponible",
+    "role": "rôle",
+    "year": "année",
+    "duration": "durée",
+    "status": "statut"
+    
 }

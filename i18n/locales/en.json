@@ -104,16 +104,25 @@
         "headline": "full archive",
         "title_1": "All my",
         "title_2": "Projects",
-        "description": "A selection of websites, SaaS platforms and business tools — from the most ambitious to side experiments."
+        "description": "A selection of websites, SaaS platforms and business tools — from the most ambitious to side experiments.",
+        "study_case": "Case study"
     },
 
     "contact": {
         "title_1": "Let's build",
         "title_2": "together",
-        "description": "Available for freelance work and agency collaborations. Reply within 24h."
+        "description": "Available for freelance work and agency collaborations. Reply within 24h.",
+        "contact_me": "get in touch"
     },
 
     "see_projects": "See the work",
+    "similar_project": "got a <span class='text-accent'>similar</span> project?",
+    "see_website": "Visit webiste",
     "see_all_projects": "See all projects",
-    "available": "Available"
+    "other_projects": "more work",
+    "available": "Available",
+    "role": "role",
+    "year": "year",
+    "duration": "duration",
+    "status": "status"
 }
