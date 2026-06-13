@@ -25,10 +25,15 @@ defineProps({
         </div>
 
         <div class="hero__foot">
-          <p class="hero__description">
-            <span class="text-accent">~$</span>
-            {{ description }}
-          </p>
+          <div class="hero__description">
+            <div v-if="$slots.links">
+              <slot name="links" />
+            </div>
+            <p>
+              <span class="text-accent">~$</span>
+              {{ description }}
+            </p>
+          </div>
 
           <div v-if="$slots.cta" class="hero__cta">
             <slot name="cta"></slot>

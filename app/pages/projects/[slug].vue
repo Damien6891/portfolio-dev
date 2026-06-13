@@ -19,7 +19,7 @@ const { data: project } = await useAsyncData(
           ~$ ./ projects /
           <span class="text-accent">{{ project.type }}</span>
         </span>
-        <span>{{ 2025 }}</span>
+        <NuxtLink class="text-accent">Voir le site</NuxtLink>
       </template>
 
       <template #headline>
@@ -29,6 +29,12 @@ const { data: project } = await useAsyncData(
 
       <template #title>
         <span v-html="project.projectTitle"></span>
+      </template>
+
+      <template #links>
+        <NuxtLink :href="project.url" class="btn btn--filled" target="_blank">
+          Voir le site
+        </NuxtLink>
       </template>
 
       <template #cta>
