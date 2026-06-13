@@ -16,7 +16,7 @@ technologies:
     - Javascript
 featured: true
 image: /images/emg-stores/emg_mockup.png
-imageCard: /images/emg-stores/emg_mockup.png
+imageCard: /images/emg-stores/emg-stores_hero.png
 scrollImage: /images/emg-stores/emg_mockup.png
 url: https://www.emg-stores.fr/
 gridClasses: "col-span-2 row-span-2"
