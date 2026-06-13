@@ -1,7 +1,9 @@
 ---
-type: project
+type: site vitrine
 title: EMG Stores - Vitrine produits professionnels
-description: Développement d'un site vitrine moderne et performant en collaboration avec DGS Création
+projectTitle: "Site vitrine<br/> <span class='text-accent'>produits </span><br/>professionnels"
+description: Site vitrine développé en collaboration avec une agence web
+projectDescription: Développement d'un site vitrine moderne et performant pour un distributeur spécialisé en pergolas et stores, en collaboration avec l'agence DGS Création
 category: showcase
 collaboration: true
 client: EMG Stores
@@ -16,101 +18,188 @@ technologies:
 featured: true
 image: /images/emg-stores/emg_mockup.png
 # image: /images/emg-stores/emg-hero.png
-imageCard: /images/emg-stores/emg_card.png
+imageCard: /images/emg-stores/emg-stores_hero.png
 scrollImage: /images/emg-stores/www.emg-stores.fr_.png
 url: https://www.emg-stores.fr/
+status: Live
+duration: 2 semaines
 ---
 
 
-## Le contexte
+::content-section
 
-EMG Stores, enseigne de distribution spécialisée dans les pergolas et stores, avait besoin de moderniser sa présence en ligne.
+#headline
+:::section-headline
+---
+number: '01'
+title: Contexte
+---
+:::
 
-Le site devait présenter clairement  leurs produits, et faciliter la prise de contact pour les professionnels et particuliers.
+#title
+Le projet
 
+#default
+:::grid
+::::grid-column
+:inline-label[Le besoin:] EMG Stores, enseigne spécialisée dans les pergolas et stores, souhaitait moderniser sa présence en ligne avec un site clair, professionnel et facile à mettre à jour.
+
+::::
+
+::::grid-column
+:inline-label[L'approche:] Une collaboration avec l'agence DGS Création — maquettes et identité visuelle de leur côté, intégration et développement technique du mien.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: Ce que j'ai construit
 ---
-:::project-gallery
+:::
+
+#title
+Fonctionnalités clés
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Intégration pixel-perfect
+text: Développement fidèle aux maquettes fournies par l'agence, avec une attention particulière au rendu sur tous les appareils.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Autonomie client
+text: Interface d'administration sur-mesure permettant au client de mettre à jour son contenu sans intervention technique.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Collaboration agence
+text: Intégration dans un workflow professionnel — respect des livrables, communication fluide et livraison dans les délais.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Custom post types & ACF
+text: Création de types de contenus dédiés par catégorie de produits — pergolas, stores et autres — combinés à Advanced Custom Fields pour une gestion de contenu structurée et évolutive.
+---
+:::::
+::::
+:::
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: stack technique
+---
+:::
+
+#title
+languages & outils
+
+#default
+:::stack
+---
+label: frontend
+items: [Wordpress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [Wordpress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: gallery
+---
+:::
+
+#title
+screens
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/emg-stores/emg-image_1.png,
-        class: object-contain
+        image: emg-stores/emg-stores_hero.png,
+        title: Page d'acceuil,
+        description: Hero slider sur la page d'acceuil.,
+        class: 'wide'
     },
     {
-        src: /images/emg-stores/emg-image_4.png,
-        class: object-contain
-    }
+        image: emg-stores/emg-stores_actualites.png,
+        title: Actualités,
+        description: Page des actualités avec pagination.,
+        <!-- class: 'wide' -->
+    },
+    {
+        image: emg-stores/emg-stores_actus-landing-page.png,
+        title: Slider actualités,
+        description: Slider des actualités sur la page d'acceuil.,
+    },
+    {
+        image: emg-stores/emg-stores_categories.png,
+        title: Categories,
+        description: Page de catégories produits.,
+    },
+
+    {
+        image: emg-stores/emg-stores_megamenu.png,
+        title: Mega Menu,
+        description: Création d'un mega menu personnalisé avec les différentes categories de produits.,
+    },
+ 
 ]
-class: breakout
 ---
 :::
 ::
 
-### Mon rôle dans ce projet
-
-J'ai collaboré avec **[DGS Création](https://www.dgs-creation.fr/)**, agence de creation de sites internet, en tant que développeur web freelance.
-
-**Répartition du travail :**
-- **DGS Création** : conception graphique, identité visuelle, maquettes du site, gestion de la relation client
-- **Ma mission** : développement technique complet, intégration des designs
-
-Cette collaboration m'a permis de me concentrer sur mon expertise : transformer des designs professionnels en un site performant et facile à gérer.
-
-::div
----
-class: full-width 
-background: dark
-padding: large
----
-
-
-## Résultats obtenus
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Autonomie totale
-description: Mise à jour du contenu sans intervention technique
-icon: i-lucide-shield-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Présence professionnelle
-description: Un site moderne qui reflète le sérieux de l'entreprise
-icon: i-lucide-sparkles
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Accessible partout
-description: Expérience fluide sur tous les appareils
-icon: i-lucide-smartphone
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Compétences mises en œuvre
-
-- Collaborer efficacement avec une agence
-- Respecter fidèlement des maquettes professionnelles
-- Créer des interfaces d'administration sur-mesure
 

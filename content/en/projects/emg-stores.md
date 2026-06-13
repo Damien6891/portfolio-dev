@@ -1,113 +1,202 @@
 ---
-type: project
-title: EMG Stores - Professional Product Showcase
-description: Development of a modern, high-performance showcase website in collaboration with DGS Création
-category: showcase
+type: website
+projectTitle: "Professional<br/> <span class='text-accent'>product </span><br/>showcase"
+title: Website - Product Showcase
+projectDescription: Development of a modern and performant showcase website for a pergola and awning distributor, in collaboration with DGS Création agency
+description: Showcase website developed in collaboration with a web agency
+category: website
 collaboration: true
-client: EMG Stores
-agency: DGS Création
-agencyUrl: https://www.dgs-creation.fr/
-role: Web Developer
-date: 2023-06-15
+role: Frontend Developer
+date: 2024-11-01
 technologies:
     - WordPress
-    - Content Management
-    - SEO Optimization
+    - PHP
+    - Javascript
 featured: true
-# image: /images/emg-stores/emg-hero.png
 image: /images/emg-stores/emg_mockup.png
-imageCard: /images/emg-stores/emg_card.png
-scrollImage: /images/emg-stores/www.emg-stores.fr_.png
+imageCard: /images/emg-stores/emg_mockup.png
+scrollImage: /images/emg-stores/emg_mockup.png
 url: https://www.emg-stores.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 20
+role: Frontend Developer
+status: live
+duration: 2 weeks
+# year: 2025
 ---
 
 
-## The context
+::content-section
 
-EMG Stores, a distribution company specializing in pergolas and awnings, needed to modernize its online presence.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-The website had to clearly present their products and facilitate contact for both professionals and individuals.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] EMG Stores, a specialist distributor of pergolas and awnings, needed to modernise their online presence with a clear, professional website that their team could manage independently.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A collaboration with DGS Création agency — visual identity and mockups on their side, technical integration and development on mine.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: What I built
 ---
-:::project-gallery
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
+label: "[ 01 ]"
+title: Pixel-perfect integration
+text: Development faithful to the agency's mockups, with close attention to rendering across all screen sizes and devices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Client autonomy
+text: Custom administration interface allowing the client to update their content without any technical intervention.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Agency collaboration
+text: Integration into a professional workflow — respecting deliverables, clear communication and on-time delivery.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Custom post types & ACF
+text: Registration of dedicated post types for each product category — pergolas, awnings and more — combined with Advanced Custom Fields for structured and scalable content management.
+---
+:::::
+::::
+
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Gallery
+---
+:::
+
+#title
+Screens
+
+#default
+:::image-gallery
+---
+items: [
     {
-        src: /images/emg-stores/emg-image_1.png
+        image: emg-stores/emg-stores_hero.png,
+        title: Homepage,
+        description: Hero slider on the homepage.,
+        class: 'wide'
     },
     {
-        src: /images/emg-stores/emg-image_4.png
-    }
+        image: emg-stores/emg-stores_actualites.png,
+        title: News,
+        description: News page with pagination.,
+    },
+    {
+        image: emg-stores/emg-stores_actus-landing-page.png,
+        title: News slider,
+        description: News slider on the homepage.,
+    },
+    {
+        image: emg-stores/emg-stores_categories.png,
+        title: Categories,
+        description: Product categories page.,
+    },
+    {
+        image: emg-stores/emg-stores_megamenu.png,
+        title: Mega Menu,
+        description: Custom mega menu built with the different product categories.,
+    },
 ]
-class: breakout
 ---
 :::
 ::
-
-### My role in this project
-
-I collaborated with **[DGS Création](https://www.dgs-creation.fr/)**, a web design agency, as a freelance web developer.
-
-**Work distribution:**
-- **DGS Création**: graphic design, visual identity, website mockups, client relationship management
-- **My mission**: complete technical development, design integration
-
-This collaboration allowed me to focus on my expertise: transforming professional designs into a high-performance, easy-to-manage website.
-
-::div
----
-class: full-width 
-background: dark
-padding: large
----
-
-
-## Results achieved
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Total autonomy
-description: Content updates without technical intervention
-icon: i-lucide-shield-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Professional presence
-description: A modern website that reflects the company's credibility
-icon: i-lucide-sparkles
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Accessible everywhere
-description: Seamless experience on all devices
-icon: i-lucide-smartphone
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Skills implemented
-
-- Effective collaboration with a design agency
-- Faithful respect of professional mockups
-- Creation of custom administration interfaces
