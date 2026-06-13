@@ -24,6 +24,7 @@ defineProps<{
   border-right: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
   transition: 0.16s;
+  height: 100%;
 
   &:hover {
     background: $color-surface-base;
