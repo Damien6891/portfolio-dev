@@ -1,107 +1,199 @@
 ---
-type: project
-title: ARCOFI - Debt Collection Expert
-description: Creation of a professional website for a debt collection company in Mulhouse, in collaboration with DGS Création
-category: showcase
+type: website
+projectTitle: "Debt recovery<br/> <span class='text-accent'>specialist</span><br/>website"
+title: Website - Corporate Showcase
+projectDescription: Development of a modern and performant showcase website for a debt recovery firm, in collaboration with DGS Création agency
+description: Corporate showcase website developed in collaboration with a web agency
+category: website
 collaboration: true
-client: ARCOFI
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Web Developer
-date: 2024-04-15
+role: Frontend Developer
+date: 2024-06-01
 technologies:
     - WordPress
-    - Contact Forms
-    - SEO Optimization
+    - PHP
+    - Javascript
 featured: true
-# image: /images/arcofi/arcofi_hero.png
 image: /images/arcofi/arcofi_mockup.png
-imageCard: /images/arcofi/arcofi_card.png
+imageCard: /images/arcofi/arcofi_landing-hero.png
 scrollImage: /images/arcofi/arcofi_landing-page.png
 url: https://www.arcofi.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 30
+role: Frontend Developer
+status: live
+duration: 2 weeks
+# year: 2024
 ---
 
 
-## The context
+::content-section
 
-ARCOFI, a debt collection company based in Mulhouse, helps businesses (SMEs and VSEs) manage their unpaid invoices. As a newly created company, it needed a professional website to establish its credibility and present its services.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-The website had to inspire trust, clearly explain the proposed solutions (amicable and legal debt collection), and facilitate contact for businesses facing unpaid invoices.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] Arcofi, a debt recovery firm based in Mulhouse, needed a professional online presence to clearly present their services — from invoice reminders to legal proceedings — and make it easy for businesses to get in touch.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A collaboration with DGS Création agency — visual identity and mockups on their side, technical integration and development on mine.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: What I built
 ---
-:::project-gallery
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
-    {
-        src: /images/arcofi/arcofi_gallery_1.png,
-        class: object-contain
-    },
-    {
-        src: /images/arcofi/arcofi_gallery_2.png,
-        class: object-contain
-    }
+label: "[ 01 ]"
+title: Pixel-perfect integration
+text: Development faithful to the agency's mockups, with close attention to rendering across all screen sizes and devices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Client autonomy
+text: Custom administration interface allowing the client to manage their content, news and services without any technical intervention.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Dedicated post types for each service and news article, combined with Advanced Custom Fields for structured and scalable content management.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Agency collaboration
+text: Integration into a professional workflow — respecting deliverables, clear communication and on-time delivery.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Gallery
+---
+:::
+
+#title
+Screens
+
+#default
+:::image-gallery
+---
+items: [
+  {
+    image: arcofi/arcofi_landing-hero.png,
+    title: Homepage,
+    description: Hero section presenting Arcofi's core services.,
+    class: 'wide'
+  },
+  {
+    image: arcofi/arcofi_section-1.png,
+    title: Custom section,
+    description: Custom section built with a Gutenberg custom block.,
+  },
+  {
+    image: arcofi/arcofi_section-2.png,
+    title: Custom section,
+    description: Custom section built with a Gutenberg custom block.,
+  },
+  {
+    image: arcofi/arcofi_actus-slider.png,
+    title: News slider,
+    description: Slider featuring the latest company news.,
+    class: 'wide'
+  },
 ]
-class: breakout
 ---
 :::
 ::
-
-### My role in this project
-
-I collaborated with **[DGS Création](https://www.dgs-creation.fr/)**, a web design agency, as a freelance web developer.
-
-**Work distribution:**
-- **DGS Création**: graphic design, visual identity, website mockups, client relationship management
-- **My mission**: complete technical development, design integration, search engine optimization
-
-This collaboration resulted in a professional website that reassures prospects and positions ARCOFI as a trusted partner in debt collection.
-
-## Results achieved
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Credibility established
-description: A professional website that inspires trust in businesses
-icon: i-lucide-shield-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Clear services
-description: Educational presentation of amicable and legal collection solutions
-icon: i-lucide-file-text
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Enhanced local visibility
-description: Optimized SEO to be found by businesses in the region
-icon: i-lucide-map-pin
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Skills implemented
-
-- Create a trustworthy image for a sensitive sector (finance/legal)
-- Present complex services in an accessible manner
-- Optimize local SEO to attract regional businesses

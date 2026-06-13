@@ -1,108 +1,199 @@
 ---
-type: project
-title: ARCOFI - Expert en recouvrement de créances
-description: Création d'un site professionnel pour une société de recouvrement de créances à Mulhouse, en collaboration avec DGS Création
-category: showcase
+type: site vitrine
+projectTitle: "Site vitrine<br/> <span class='text-accent'>cabinet</span><br/>de recouvrement"
+title: Site Vitrine - Cabinet de recouvrement
+projectDescription: Développement d'un site vitrine moderne et performant pour un cabinet de recouvrement de créances, en collaboration avec l'agence DGS Création
+description: Site vitrine développé en collaboration avec une agence web
+category: website
 collaboration: true
-client: ARCOFI
 agency: DGS Création
 agencyUrl: https://www.dgs-creation.fr/
-role: Développeur web
-date: 2024-04-15
+role: Développeur Frontend
+date: 2024-06-01
 technologies:
     - WordPress
-    - Formulaires de contact
-    - Optimisation SEO
+    - PHP
+    - Javascript
 featured: true
 image: /images/arcofi/arcofi_mockup.png
-# image: /images/arcofi/arcofi_hero.png
-imageCard: /images/arcofi/arcofi_card.png
+imageCard: /images/arcofi/arcofi_landing-hero.png
 scrollImage: /images/arcofi/arcofi_landing-page.png
 url: https://www.arcofi.fr/
+gridClasses: "col-span-2 row-span-2"
+order: 30
+role: Développeur Frontend
+status: live
+duration: 
+year: 2024
 ---
 
 
-## Le contexte
+::content-section
 
-ARCOFI, société de recouvrement de créances basée à Mulhouse, accompagne les entreprises (PME et TPE) dans la gestion de leurs impayés. Nouvellement créée, l'entreprise avait besoin d'un site web professionnel pour établir sa crédibilité et présenter ses services.
+#headline
+:::section-headline
+---
+number: '01'
+title: Contexte
+---
+:::
 
-Le site devait inspirer confiance, expliquer clairement les solutions proposées (recouvrement amiable et judiciaire), et faciliter la prise de contact pour les entreprises confrontées à des factures impayées.
+#title
+Le projet
 
+#default
+:::grid
+::::grid-column
+:inline-label[Le besoin:] Arcofi, cabinet de recouvrement de créances basé à Mulhouse, souhaitait une présence en ligne professionnelle pour présenter clairement ses prestations — de la relance de factures à la procédure judiciaire — et faciliter la prise de contact des entreprises.
+
+::::
+
+::::grid-column
+:inline-label[L'approche:] Une collaboration avec l'agence DGS Création — identité visuelle et maquettes de leur côté, intégration et développement technique du mien.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-::div
+#headline
+:::section-headline
 ---
-class: full-width bg-neutral-900
+number: '02'
+title: Ce que j'ai construit
 ---
-:::project-gallery
+:::
+
+#title
+Fonctionnalités clés
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
 ---
-images: [
-    {
-        src: /images/arcofi/arcofi_gallery_1.png,
-        class: object-contain
-    },
-    {
-        src: /images/arcofi/arcofi_gallery_2.png,
-        class: object-contain
-    }
+label: "[ 01 ]"
+title: Intégration pixel-perfect
+text: Développement fidèle aux maquettes fournies par l'agence, avec une attention particulière au rendu sur tous les appareils.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Autonomie client
+text: Interface d'administration sur-mesure permettant au client de gérer son contenu, ses actualités et ses prestations sans intervention technique.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Custom post types & ACF
+text: Création de types de contenus dédiés pour chaque prestation et article d'actualité, combinés à Advanced Custom Fields pour une gestion de contenu structurée et évolutive.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Collaboration agence
+text: Intégration dans un workflow professionnel — respect des livrables, communication fluide et livraison dans les délais.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Stack technique
+---
+:::
+
+#title
+Langages & outils
+
+#default
+:::stack
+---
+label: frontend
+items: [WordPress, HTML5, CSS3, Javascript]
+---
+:::
+:::stack
+---
+label: backend
+items: [WordPress, PHP]
+---
+:::
+:::stack
+---
+label: data
+items: [MySQL]
+---
+:::
+::
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '04'
+title: Galerie
+---
+:::
+
+#title
+Écrans
+
+#default
+:::image-gallery
+---
+items: [
+  {
+    image: arcofi/arcofi_landing-hero.png,
+    title: Page d'accueil,
+    description: Section hero de la page d'accueil présentant les prestations principales d'Arcofi.,
+    class: 'wide'
+  },
+  {
+    image: arcofi/arcofi_section-1.png,
+    title: Custom section,
+    description: Section custom, création de block custom sur Gutemberg.,
+  },
+  {
+    image: arcofi/arcofi_section-2.png,
+    title: Custom section,
+    description: Section custom, création de block custom sur Gutemberg.,
+  },
+  {
+    image: arcofi/arcofi_actus-slider.png,
+    title: Slider actualités,
+    description: Slider avec les actualités de l'entreprise.,
+    class: 'wide'
+  },
 ]
-class: breakout
 ---
 :::
 ::
-
-### Mon rôle dans ce projet
-
-J'ai collaboré avec **[DGS Création](https://www.dgs-creation.fr/)**, agence de création de sites internet, en tant que développeur web freelance.
-
-**Répartition du travail :**
-- **DGS Création** : conception graphique, identité visuelle, maquettes du site, gestion de la relation client
-- **Ma mission** : développement technique complet, intégration des designs, optimisation pour le référencement
-
-Cette collaboration a permis de créer un site professionnel qui rassure les prospects et positionne ARCOFI comme un partenaire de confiance en recouvrement de créances.
-
-
-## Résultats obtenus
-
-::u-page-grid
----
-class: breakout
----
-
-:::u-page-card
----
-title: Crédibilité établie
-description: Un site professionnel qui inspire confiance aux entreprises
-icon: i-lucide-shield-check
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Services clairs
-description: Présentation pédagogique des solutions de recouvrement amiable et judiciaire
-icon: i-lucide-file-text
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Visibilité locale renforcée
-description: Référencement optimisé pour être trouvé par les entreprises de la région
-icon: i-lucide-map-pin
-spotlight: true
-spotlight-color: primary
----
-:::
-
-::
-
-### Compétences mises en œuvre
-
-- Créer une image de confiance pour un secteur sensible (finance/juridique)
-- Présenter des services complexes de manière accessible
-- Optimiser le référencement local pour capter les entreprises régionales
