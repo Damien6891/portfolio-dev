@@ -6,6 +6,8 @@ projectDescription: Development of a modern and performant showcase website for 
 description: Showcase website developed in collaboration with a web agency
 category: website
 collaboration: true
+agency: DGS Création
+agencyUrl: https://www.dgs-creation.fr/
 role: Frontend Developer
 date: 2024-11-01
 technologies:
