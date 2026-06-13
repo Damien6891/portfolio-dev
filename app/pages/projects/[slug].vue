@@ -21,7 +21,7 @@ const projectUrl = computed(() => project.url);
           ~$ ./ projects /
           <span class="text-accent">{{ project.type }}</span>
         </span>
-        <NuxtLink :to="project.url" class="text-accent">
+        <NuxtLink :to="project.url" target="_blank" class="text-accent">
           {{ $t('see_website') }}
         </NuxtLink>
       </template>
