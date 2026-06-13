@@ -9,6 +9,8 @@ const { data: project } = await useAsyncData(
       .first();
   },
 );
+
+const projectUrl = computed(() => project.url);
 </script>
 
 <template>
@@ -19,7 +21,9 @@ const { data: project } = await useAsyncData(
           ~$ ./ projects /
           <span class="text-accent">{{ project.type }}</span>
         </span>
-        <NuxtLink class="text-accent">Voir le site</NuxtLink>
+        <NuxtLink :to="project.url" class="text-accent">
+          {{ $t('see_website') }}
+        </NuxtLink>
       </template>
 
       <template #headline>
@@ -32,7 +36,7 @@ const { data: project } = await useAsyncData(
       </template>
 
       <template #links>
-        <NuxtLink :href="project.url" class="btn btn--filled" target="_blank">
+        <NuxtLink :to="project.url" class="btn btn--filled" target="_blank">
           {{ $t('see_website') }}
         </NuxtLink>
       </template>
