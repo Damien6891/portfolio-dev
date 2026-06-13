@@ -1,143 +1,207 @@
 ---
-type: project
-title: Inkara - The app built for independent tattoo artists
-description: Design and development of a full-featured SaaS web application to help independent tattoo artists manage their day-to-day business
+type: web application
+projectTitle: "Multi-user<br/> <span class='text-accent'>saas </span><br/>platform"
+title: Web Application - CMS
+projectDescription: Design and development of a full-featured SaaS application to help independent tattoo artists manage their day-to-day business
+description: SaaS management application for independent tattoo artists
 category: webapp
 collaboration: false
 role: Fullstack Developer
 date: 2024-11-01
 technologies:
-    - SaaS Web Application
-    - Management System (CRM)
-    - Online Invoicing
-    - Electronic Signature
-    - Geolocated Directory
+    - Laravel
+    - Inertia
+    - Vue.js
 featured: true
 image: /images/inkara/inkara_mockup-1.png
-imageCard: /images/inkara/inkara_annuaire.png
+imageCard: /images/inkara/inkara_project-1.png
 scrollImage: /images/inkara/inkara_landing-page.png
 url: https://inkara.app/
+gridClasses: "col-span-2 row-span-2"
+order: 10
+role: Full stack developer
+status: live
+duration: 4 months
+year: 2025
 ---
 
 
-## The context
+::content-section
 
-Independent tattoo artists juggle dozens of tasks every day that have nothing to do with their craft: responding to client inquiries, managing appointments, getting consent forms signed, tracking invoices... All time-consuming work that cuts into their creative time.
+#headline
+:::section-headline
+---
+number: '01'
+title: Context
+---
+:::
 
-Inkara is a web application built specifically for this profession. The goal: bring everything that isn't tattooing into one single tool, so the artist can focus on what actually matters.
+#title
+The project
 
+#default
+:::grid
+::::grid-column
+:inline-label[The need:] Independent tattoo artists juggle daily between appointment management, client follow-up, administrative documents and invoicing — all scattered across tools not designed for their trade.
+
+::::
+
+::::grid-column
+:inline-label[The approach:] A SaaS application designed from scratch to centralise all these processes in a single, reliable workspace built for tattoo professionals.
+
+::::
+:::
+
+::
+
+
+
+::content-section
+---
+fullWidth: true
 ---
 
-
-::div{class="full-width bg-neutral-900"}
-
-:::image-grid
+#headline
+:::section-headline
 ---
-images:
-  - src: /images/inkara/inkara_mockup-2.png
-    alt: "Inkara mockup"
-    class: "sm:col-span-2 lg:row-span-2"
-  - src: /images/inkara/inkara_profile-page.png
-    alt: "Arcofi card"
-  - src: /images/inkara/inkara_annuaire.png
-    alt: "Annuaire inkara"
-class: breakout
+number: '02'
+title: What I built
+---
+:::
+
+#title
+Key features
+
+#default
+:::grid{class="two-col--no-gap two-col--bordered"}
+::::grid-column
+:::::feature-card
+---
+label: "[ 01 ]"
+title: Personal management workspace
+text: Each tattoo artist accesses a dedicated dashboard bringing together all their data — clients, appointments, documents and invoices.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 02 ]"
+title: Appointment management
+text: Integrated calendar, configurable time slots and full appointment tracking per client.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 03 ]"
+title: Documents & e-signature
+text: Consent form generation, sending and electronic signature directly within the application.
+---
+:::::
+::::
+
+::::grid-column
+:::::feature-card
+---
+label: "[ 04 ]"
+title: Invoicing
+text: Create and track invoices linked to projects, with full history per client.
+---
+:::::
+::::
+:::
+
+::
+
+
+
+::content-section
+#headline
+:::section-headline
+---
+number: '03'
+title: Tech stack
+---
+:::
+
+#title
+Languages & tools
+
+#default
+:::stack
+---
+label: frontend
+items: [Vue.js, HTML5, Javascript, Blade, Tailwind]
+---
+:::
+:::stack
+---
+label: backend
+items: [Laravel, PHP 8, Inertia]
+---
+:::
+:::stack
+---
+label: data
+items: [PostgreSQL]
 ---
 :::
 ::
 
 
-### A 100% solo project, from idea to production
-
-Inkara is a personal project — conceived, designed, and developed entirely on my own, from initial product thinking through to deployment. No agency, no team: every technical and functional decision was made and implemented from start to finish.
-
-This project demonstrates my ability to design and ship a complex web application independently, with real business logic and professional end users.
-
-## What the application does
-
-The app serves two types of users: tattoo artists who manage their business from a private dashboard, and clients looking for a tattoo artist through a public directory.
-
-### For tattoo artists — the dashboard
-
-Each artist gets a complete management workspace:
-
-- **Public portfolio** — a personal page to showcase their work and available flash designs
-- **Client management** — client profiles, with full history of associated projects and appointments
-- **Calendar** — appointment scheduling with a calendar view
-- **Consent forms** — generation, sending, and electronic signature directly within the app, linked to the right client and project
-- **Invoicing** — create and track invoices tied to projects
-- **Customizable contact form** — with availability slot management to filter and frame incoming requests
-
-### For clients — the directory
-
-A public directory lets anyone looking for a tattoo artist filter by city and browse portfolios directly within the application.
-
-### Two plans: Free and Pro
-
-| | Free | Pro |
-|---|---|---|
-| Public portfolio page | ✅ | ✅ (with flash designs) |
-| Client management | Up to 10 | Unlimited |
-| Appointments | 15/month | Unlimited |
-| Portfolio photos | Limited | Unlimited |
-| Contact form | Standard | Customizable with time slots |
-| Consent form | PDF print | Online signature |
-| Invoicing | ❌ | ✅ |
-
-
-## What this project demonstrates
-
-::u-page-grid
+::content-section
+#headline
+:::section-headline
 ---
-class: breakout
----
-
-:::u-page-card
----
-title: Full-stack development
-description: Backend, database, business logic, user interface — everything designed and built solo
-icon: i-lucide-layers
-spotlight: true
-spotlight-color: primary
+number: '04'
+title: Gallery
 ---
 :::
 
-:::u-page-card
+#title
+Screens
+
+#default
+:::image-gallery
 ---
-title: Functional SaaS product
-description: Account management, Free/Pro subscriptions, isolated multi-user data, real production deployment
-icon: i-lucide-rocket
-spotlight: true
-spotlight-color: primary
+items: [
+  {
+    image: inkara/inkara_appointement-1.png,
+    title: Appointment,
+    description: Appointment detail view from the calendar.,
+    class: 'wide'
+  },
+  {
+    image: inkara/inkara_calendar.png,
+    title: Calendar,
+    description: Appointment calendar for a user.,
+  },
+  {
+    image: inkara/inkara_consent-form.png,
+    title: Consent form,
+    description: Client signing a consent form.,
+  },
+  {
+    image: inkara/inkara_finances.png,
+    title: Finances,
+    description: Tattoo artist finance dashboard. Calculated from issued and pending invoices.,
+    class: 'wide'
+  },
+  {
+    image: inkara/inkara_profile-page.png,
+    title: Artist profile,
+    description: Tattoo artist portfolio page, visible to everyone.,
+  },
+  {
+    image: inkara/inkara_annuaire.png,
+    title: Directory,
+    description: Public directory to search for a tattoo artist by location.,
+  },
+]
 ---
 :::
-
-:::u-page-card
----
-title: Advanced business features
-description: Electronic signature, invoicing, scheduling, dynamic forms — well beyond a standard website
-icon: i-lucide-briefcase
-spotlight: true
-spotlight-color: primary
----
-:::
-
-:::u-page-card
----
-title: Dual user interface
-description: A private dashboard for professionals, a public directory for their clients — two distinct experiences within a single application
-icon: i-lucide-users
-spotlight: true
-spotlight-color: primary
----
-:::
-
 ::
-
-### Skills put to work
-
-- Architecting a multi-user SaaS application from scratch
-- Modeling complex business data (clients, projects, appointments, documents, invoices)
-- Handling authentication, roles, and access levels
-- Building distinct user interfaces tailored to each profile (artist / client)
-- Delivering a complete product, tested and deployed in real conditions
